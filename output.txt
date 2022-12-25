@@ -1,0 +1,471 @@
+
+Please choose what you want to do:
+  1. Ranking top users have the most posts, reacts, comments, shares
+  2. Ranking top comments have the most reacts, replies
+  3. Ranking top posts have the most reacts, comments, shares
+  4. Crawl all comments of a post followed by regex
+    
+
+Post ranking:
+[('Xuân Nhật',
+  {'link': 'https://facebook.com/mxnhat1610?lst=100004843053382%3A100007582690558%3A1670349317&eav=AfYycciFmARqCoUo8uR6ogH_0pnVKi0qhNqDSgLSWI2zkhsItGLtKpg9qKkPNFYMMsA&refid=17&_ft_=encrypted_tracking_data.0AY8RmjkKpM_1y9Xglll6Jr5yuhUcLyoGB77r70fe7ltTLZBM2dUBShArOOFaYYkYfG8M2WNBHjIYUCg7zuxoxIVwqBr6yDm5frcUyySNXBYtCFLNUOXScw4HzWOlgadbWasRCFIDvnyar56zD7r_pzqEBBUd-1llxKGCuzmt8KxpgfHJ5TeIZoTT1lAC285B_tp8EV97seZrI3AX86czidwvZKyq9SUG2uo1d_P_6pQ85MglWhZNQdwwOMHolPa-6xvpvRcGgrVHVBjKhVLKCqnMBHUhZaJsGmVTqkgVMYihMPiY5YfHS4Ar8pgcJ2Wl2cW_9mpI-sUV6CdPQVNUanGGocCY0KnG7KCr-wHV4WdwDvwfDk4gE4gDTEkI2yGZSqoaFgUMReClpuD4O6SU_64MT5v9f781AAROiIbLUlhPQIbzgxxsYnJ16fpt7mZdWpUFrbMYxbMxv2m0o5c3mb0E9-f80prVMu-D4HLWK_G4gvIZilJOtpuY3PLh5nKY4TTGLtpFO6QMk-yY9P90dLVImik0hvGttcqFtRdzWsuA4TPr1IYyogpJMx43MLICUVo-wH-GFiEaQQ1ZNxNDo3D7kE1AVQmvPukLdNflX_AhHddkA_6oaP88YoYP-Uz8Ht-NkQPi4QWNxVKnMTkzEmELTtn0F5nXe7SsvbElBiGaldoUM8tw5e5XNRawtEkW1DdawWJ6huLzRFJC7SraFP6Uew95G0KECqDjR3bbeJbN8cTmqcBSlMK_IoUW7nIXH_dndFRt5b6SeXldc08_&__tn__=C-R&paipv=0',
+   'post_counter': 91}),
+ ('Nguyễn Đức Chinh',
+  {'link': 'https://facebook.com/chinh1108?eav=AfapFEKVrlW8fuFweYkA3f3Mj24FW5h4r2PT_9Xc5aKam5ZTubOWvIg91Jx41CKVkC4&_ft_=encrypted_tracking_data.0AY8Zb002_wBgKpTrPHZcyr9X5HkfDUPvfHrvLvLik_EINgkSm1Vj6yRbkyddaoDhFS9MV2tIcaFkpF-3NV2tslL832mSNyWY4ICGvf1pJ2x2LwZuUryst03Ar9xBrokiFJHHdr7v6X0RX30mHlVgE4sXzpuYmAm66wWCjMqod4oUSxajtWGhFtuzai4gYjP5KHp4IwUD1eHGzfcAvOOnCSuz836OntuxmyOfreKQd_xXQxaPbmXeA2j7eYV7EYSdZxyL-Ij42glHqTENqhJR8ZEf82nEpe6mvyoQRPJZpkSmb3yAc5BzAwERisKoPFGGAsWm_Je9Kn_ZB08CM1LfdvKGbuDt3_9UKC-6xK6c5TJhjj5I2q5b63hMDYYPdafpjR9HPlHz7iWCOj9bZMp6YrrG4KlYX42zzc-0mzia1CELyXyn0e_lNLj972Nk_xBN1oiFt9Fl38-xBLzj_7bk5A_--XxCvQdWVxQji-9rpXwFA376DbcwuxtixiKqocj9JtOL5K5jbOVeBEw27TAyXvDdDyhhb9dzypjEbLgnQWwRw4drR9f9Vy_hKeC3ruISSOBVuJtcKXbEf1nQv7jHnhMScdJQ8xk9Ua1ykL6NM4PF3lMlirv_87BOTIHJYqhe8KOMexwkD5d60yasUE6UsvmtcWIF_zguaBohV0rPadtoEAl0W57hvWPCkoTszpia6YN03lDe6wr0J6tk3OJz6oT7NHC4xjgIzR_mvqlArqVqUm5DLMJ0Q5pM54Q47hRBzDvw6VAyhYfc46GKWGdB7vjdrYaOkwioeG8xVGgZji89O9RRl2Y3G1ZCWOSap-p4m8fPi4iEb8tV75Cx3JnZ14Iqix52j8lxl4ST-w&__tn__=C-R&paipv=0',
+   'post_counter': 3}),
+ ('Tuấn Kiệt',
+  {'link': 'https://facebook.com/KietBunzz?eav=AfZ4fCBB3ZgsBas8tjLrCXUwSjPYn9H06bcX3DzmloL5XjViDAmgdJeOgpPeKhXvX0M&_ft_=encrypted_tracking_data.0AY95Y5jLfgsxaqQWWn3xoawcHMek08qUPZthO6qdT-Atw1EweNm_sY2Fhq4nbEjpOj1JlCmkdk8pokS5w3AD-2GLE5v8yoFCsIBuaj1mvdl9mDCXvnKre20KXIaa_QZgOrZh-Mmc1f1KkkH2rzmTGLUTGMa3KO9StyxS6j6wOIY0aD8X5kB6ShMhQ0fOHkE4wqclsgGmlLSdNphQMKYbnbnd70RB8AJ1QQ4qiNf_zNkIP7zwbPTq7X0dhcoTNWYfz2y1Js-rWpNIOdhgO2JsdtY2XuifAERsklX9eSvIMeseiI_WyhQUVjfeBQifFE0H5STHWIAhvA-BCjmA5wTHsxoYinf2u7xIkSWqFDgt_c-WSCoZhI2dQTONx-M5vz6VoEs-HwNWfOqv8wx1skKLZ_TDlJkQb6tDEbHM8GD59ZoEJ2tA4jyj_ip5BkxuhKRMWb_1seJCO9HiGiERzXTTuHzsppcx7OkMuFUI_RgOTVmVKnW-Dy7JFRqgtXHk2gSN8-0bwzLV8tvfMHVc-yd-VoBGy73JBgiduJ6dZ3V60qOZtx0gze_J6qWZiBNqxUdsvxr7wxn_otoKdX5xHWR3N6a3n8yyYLQDnHgtY9FA_vxsy2AlkpSEvo3oD2u66jLwi1JOlkk2AgQDwXSV9JzHOms4aKP6AqnNae2BifKbemWGqXYSY1wA1DXRkQbmTivyV67BPnwg1OblDowAvgVXnS7bGw3-iEX1cw&__tn__=C-R&paipv=0',
+   'post_counter': 2}),
+ ('Nguyễn Thị Bích Lài',
+  {'link': 'https://facebook.com/lai.bich.355?eav=AfYIBnr6zjlAzEJBX5_Ori5WLKFdDSCUghZwcHedmqBh4mdXSv5OS8RHyrox7bYNy7w&_ft_=encrypted_tracking_data.0AY8ik0rUzThy2ENopgknA6WsvkM62j_Z1Hh8RKfK3MGMrkqlArTHH9jhsMMwTViWVBrmmgzr0ZJOxixiGcO0fmfpQtP6Iv_Zf6LHy15nUV1Zq76bo_cmGAbtN0PH0Vsey1nx5bT9fLmCjsHkAkGyTOvA-Jr4TTEudOr6lrsQc7lE_7A6sUS7mlLQV2pZj1d4xVgcdSP5PaWF4YUoKZjtloKwzVRIlXEkEGKgKbMfpOHmVKFgZThk7iig4eaO0-UDddyS793t2DcgJ0JvJnhtfzIOBNiHOQiFDjnUY8nkYoP11l9zmYIO9snMunI0MyKOFHmX2C-l-hOxhYoh0F8-6WdTAJd1m8NdK7wY3VHR1CHdlHA201nhm7ets9PkaTa8xldIaUjT9wx5TzXxysoP2bCB4wk75YAfRsfI8b39k7YrrEPbkOERlwdIMdot9wAm6kgPiUYI9iemYYDi7yy3sGNE2iUlbow-uiGnDAVqoyXOQ3NwJCIIWcj9Rct1FLChhrlCkyFWSs3wyNbYaqT8kQ0bmiqbVD8RX82kXrLL-pt3gZNJSLo_Zjv7lpy_HmQA9GISoQX-BqyaXg-P3hKxH8cE&__tn__=C-R&paipv=0',
+   'post_counter': 1}),
+ ('Bich Liên Nguyên',
+  {'link': 'https://facebook.com/bichlien.nguyen.5076798?eav=AfaeURbYzrKH-6XIazilvyIsG0YJ90QX-ZAh2ZCWz52O0U7NfTJdQV64q6lRv1Zspcw&_ft_=encrypted_tracking_data.0AY-c7sACoE_wwnqMYoyQ-lfERmxoMB59wksHcMV-W38wOSmEEf98IE-ObtL9moxO2QHsQHnEWbWWjbXciKLLV6jyVTdxFMQcCznwD79JbOseL3J-hrP7vk5ofRpx6pRHALBBOvf0zOb3jpQOoObjGBRhN6tzKZp_1Oym6Frbrgmw2cVc6-CFPrFxaAe8XJKp9YwI1D0fMLF2N7n2o871hKVA85EcPfuKea4ORMSJeLAkLJZC3euRtwUPoD8FrGkmNRqKD1ts4W_KnzkgepDYO7qnSTfnSk6tUHzWjVEgE7R6UeTSzpwb1zuiNKEuSEawXxm7aBVM1JAj7ACuHblCtdkE_KVLOXDDCBo7GNqgIET17hCThQkwV8HVoO4hKvqWqrn47_S52x77qwB2EwL7i9AnM8eD8IVK50uRKYIdtS6QwqeFmtli6tVtrDC_0GsI_u49zyP2cgQfQeyE4xrKZbt-5muSirMBI73PeQyuZA2RtwIiBl17QsuIEWIL8t50TCYwY3XPvKZetIArVp2Ie3N5L1bnuxHpsTWfYz5HOC3k5cs4bWpMGkosp7w_5kyyF6Fly9drASBdCPRV6WOkhMb1mTsmuLFy1ScDIJYfBV7gjPhXGZ4jUpuWyVwc_eqmEElO_3mweXAInG4NhkANU2qOgXKJ3x3kdSIFJPYJa6cU2zfSF9wC4o1Z9FpHOJVsGFyvic-t2SRxCDz2c6VorUvcFA_8Upa8c0Xe9FahPo5TRrCmYvSTSvMjke6IWfrqq_0hW6xtT52b-_DGV_lQS10fN-NCA_uL6GCMEEAdYw2WLPcXaVwL2J_6oz9IkDn_qk_-yyCFipgMtFNns0IorJpn-DU&__tn__=C-R&paipv=0',
+   'post_counter': 1})]
+
+React ranking:
+[('Xuân Nhật',
+  {'link': 'https://facebook.com/mxnhat1610?eav=AfYNYkCifBv2sCR_sOw3nSBBqtC3dWxqlFWJwxWig8lXO1XsB1moTVyOuqU846zixJk&fref=pb&paipv=0',
+   'react_counter': 115}),
+ ('Nguyễn Đức Chinh',
+  {'link': 'https://facebook.com/chinh1108?eav=AfbrmjKTrqVKjf45I7k7lBU-M5KbEhDryaZVdsJUaIM0M2HkinAZExwW87gJ6XTP4xE&fref=pb&paipv=0',
+   'react_counter': 59}),
+ ('Nguyễn Thuu',
+  {'link': 'https://facebook.com/nguyenthuu1412?eav=AfamgEJH06KHothOyFFVKfP1VVpkJDzX3GH1X6-nRYjYijAyvtbxKqwrOzT1yctrBXg&fref=pb&paipv=0',
+   'react_counter': 56}),
+ ('Bich Liên Nguyên',
+  {'link': 'https://facebook.com/bichlien.nguyen.5076798?eav=AfZIUtuT4LnTpt9KJICISSZ2DcgIJiueqLQaIDARNwuoSrwMvCWXfl-rTTFC4oNnLwU&fref=pb&paipv=0',
+   'react_counter': 51}),
+ ('Phương Thanh',
+  {'link': 'https://facebook.com/phuongthanh.huynh2910?eav=Afbk8Ua7Ku20r-jEMQTkbMnhkSwYN0K_vDDJUwZE8q6WO11owSnaZ-WmUCyIVXtqknM&fref=pb&paipv=0',
+   'react_counter': 40})]
+
+Comment ranking:
+[('Xuân Nhật',
+  {'comment_counter': 272,
+   'link': 'https://facebook.com/mxnhat1610?eav=AfZvCOm00XFrLMH_9MqIaB0sm6lIxRXsZD--VGdNDmzI8g3stcSjCD7QplN6y3acPkM&fref=nf&__tn__=R&paipv=0'}),
+ ('Nguyễn Đức Chinh',
+  {'comment_counter': 85,
+   'link': 'https://facebook.com/chinh1108?eav=AfY4WavVK4l-UT68UiCsipP-KXHE_zVYP8qP5QZbTspkIiqFLt_k50WT2_uz61orbRI&fref=nf&refid=13&__tn__=R&paipv=0'}),
+ ('Uyênn',
+  {'comment_counter': 47,
+   'link': 'https://facebook.com/profile.php?id=100004338256927&eav=AfaRowinkiBl50utLVoj2su_3cEnAFnnR8pQcHPm-lptJeDo8xnLFnGDoi9EOX8vHiY&fref=nf&refid=13&__tn__=R&paipv=0'}),
+ ('Tuấn Nguyễn',
+  {'comment_counter': 41,
+   'link': 'https://facebook.com/hades154?eav=AfZjfbeDU-eRvPD0fnoTeygiSaRutpW-Ji3cmG5CgzwT-6u8ei3-2f8dzcDeq2afNCQ&fref=nf&__tn__=R&paipv=0'}),
+ ('Lê Quốc Việt',
+  {'comment_counter': 39,
+   'link': 'https://facebook.com/lequocviet110121?eav=AfZOvhRvNJUKWLVKHAQm9pc1gmdQ6Y9GlEm_0S4r79u4gbY0mXJlMr0w5vZIGHLSlzQ&fref=nf&refid=13&__tn__=R&paipv=0'})]
+
+Share ranking:
+[('Tuấn Nguyễn',
+  {'link': 'https://facebook.com/hades154?eav=Afb4lui1J_MkB03ExwJufMdEy7KfWXIzH7wnNQcLz1bamiAUMhPNXKLr69HW254Ious&fref=pb&paipv=0',
+   'share_counter': 2}),
+ ('Bich Liên Nguyên',
+  {'link': 'https://facebook.com/bichlien.nguyen.5076798?eav=AfaKWm0l4Nw7x1bzngxOweUZK6Bs2opQS0TKHqbQC-GEwQfhsNszN-miSAU0YEtoRbg&fref=pb&paipv=0',
+   'share_counter': 1}),
+ ('Khánh Linh',
+  {'link': 'https://facebook.com/linh.thehuman?eav=AfYKfD7uNidoYrhDhjn5WBY7eLG4pD21MzAAVKzitAghFpqF1vePdgk3tCmkfI_nZ1w&fref=pb&paipv=0',
+   'share_counter': 1}),
+ ('Nam Đức Nguyễn',
+  {'link': 'https://facebook.com/Ndnam.621?eav=AfbnjNgj15g8kAW53da5Q1AZk6GPjumZpPsACokVXh2xL0Wlt8XlM_a0y_w2wESvsok&fref=pb&paipv=0',
+   'share_counter': 1})]
+
+Please choose what you want to do:
+  1. Ranking top users have the most posts, reacts, comments, shares
+  2. Ranking top comments have the most reacts, replies
+  3. Ranking top posts have the most reacts, comments, shares
+  4. Crawl all comments of a post followed by regex
+    
+[{'most_reacted_comments': [{'comment_reaction_count': 1,
+                             'comment_reactions': {'love': 1},
+                             'comment_text': 'Xuân Nhật cu Dũng cũng khg về. '
+                                             'Lúc nào anh em gặp nhau cho vui. '
+                                             'Em rụt rè lắm',
+                             'comment_time': datetime.datetime(2022, 9, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/608791510922420',
+                             'commenter_name': 'Hoàng Thu Hương',
+                             'commenter_url': 'https://facebook.com/huong.hoangthithu.921?eav=AfZxBAUMOplYjyWGEWr2QGOO9A_He2P7O9PMQ-bTdtbisg5j_pPo0PmHLNZe2BxwVQA&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'love': 1},
+                             'comment_text': 'Xuân Nhật cu Dũng cũng khg về. '
+                                             'Lúc nào anh em gặp nhau cho vui. '
+                                             'Em rụt rè lắm',
+                             'comment_time': datetime.datetime(2022, 9, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/608791510922420',
+                             'commenter_name': 'Hoàng Thu Hương',
+                             'commenter_url': 'https://facebook.com/huong.hoangthithu.921?eav=AfZxBAUMOplYjyWGEWr2QGOO9A_He2P7O9PMQ-bTdtbisg5j_pPo0PmHLNZe2BxwVQA&fref=nf&__tn__=R&paipv=0'}],
+  'most_replied_comments': [{'comment_reply_count': 3,
+                             'comment_text': 'Về lễ khg cháu',
+                             'comment_time': datetime.datetime(2022, 9, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/1311483156054348',
+                             'commenter_name': 'Hoàng Thu Hương',
+                             'commenter_url': 'https://facebook.com/huong.hoangthithu.921?eav=AfamTucZFYnzXnLyiZBnUNEnI4jvweGmpbtUv-GCf4HRSxEii8caSEuJXiCxesnAgQA&fref=nf&refid=13&__tn__=R&paipv=0'},
+                            {'comment_reply_count': 3,
+                             'comment_text': 'Về lễ khg cháu',
+                             'comment_time': datetime.datetime(2022, 9, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/1311483156054348',
+                             'commenter_name': 'Hoàng Thu Hương',
+                             'commenter_url': 'https://facebook.com/huong.hoangthithu.921?eav=AfamTucZFYnzXnLyiZBnUNEnI4jvweGmpbtUv-GCf4HRSxEii8caSEuJXiCxesnAgQA&fref=nf&refid=13&__tn__=R&paipv=0'}],
+  'post_text': "These days, I'm way too lonely\n"
+               "I'm missing out, I know\n"
+               "These days, I'm way too alone\n"
+               "And I'm known for giving love away, but\n"
+               '…',
+  'post_time': datetime.datetime(2022, 9, 4, 14, 40),
+  'post_url': 'https://facebook.com/story.php?story_fbid=3278268822435842&substory_index=0&id=100007582690558&eav=AfaUMNfJq7pI6-o0JVfbWufBw6nGay5oSWep18aK_GnrwCDRafINghkhnAGiyLpYyk4&m_entstream_source=timeline&refid=17&_ft_=encrypted_tracking_data.0AY9kxhfGmYkezRFYihkjK_BfCGILb3WYEuqifsZ5mK2nL7QcgX5leuHmOQjkB3bd76cpRoQljCtJHQwsXQONNf353rIio3U5e8bZoI1TU2K8EY0RGDybl12ZnamAtrWK_Em-g73qBgkEdBbsvn6jmd_orerNPmRnNmOmfr42DOsebYUgnbrnrGs6Ydb_IgjtdJmr08pnNHeZjXuOiPn0NDAzMzsgdhanCIhalabg8fW73Kzx18_vKv6q6n7s9oeI_UK-BqjnEjaDkQHE-G30u5AcMPM_IHkgyuESJoHK5PzQCyq4wlEdKa5BMM59-ZK6_04gtGcMimdm51uiD9DIK9juEg1p3DqIhT64uJf0a7GRbdEU8SNsab5MkkWlifbtiMojfYSLWLyI8KFyHDZvlObR7vxuydxcotHDahUf9ls1KqL34Q6S9qMY2mc9YKWPM9FOUZzn-43xV78W3Vm7ePaB_TCBYNPfXloXzIKHhHY0DquSwq4obHw3yMlJXH2EQWGXTmxJHgRMiUZBhp0FpivMqge1vO3K7VbW56R9vQyQAu5qN7-H6ne28nTWhydRKJyEHn80d-9YJ4DgogehrN8XnMRgtdJ1_FjUsef0nrcN5VIh8eqAZZHy2li2hPTomlhS_owdlMs7mGp8qYaeHuN-78mVQaMpK1vF9Q9rmgPBhIEIr4ZF1Nbl3ZEy3oL5CzK8TKqKuvJB1vMekZQWqNduOisXUDStIHeRvxhHLX0H5zmuxAQo6UEwFKMyR5zTw9thctfiVsmFAok63EQ&__tn__=%2As%2As-R&paipv=0',
+  'user_url': 'https://facebook.com/mxnhat1610?lst=100004843053382%3A100007582690558%3A1670349317&eav=AfYycciFmARqCoUo8uR6ogH_0pnVKi0qhNqDSgLSWI2zkhsItGLtKpg9qKkPNFYMMsA&refid=17&_ft_=encrypted_tracking_data.0AY9kxhfGmYkezRFYihkjK_BfCGILb3WYEuqifsZ5mK2nL7QcgX5leuHmOQjkB3bd76cpRoQljCtJHQwsXQONNf353rIio3U5e8bZoI1TU2K8EY0RGDybl12ZnamAtrWK_Em-g73qBgkEdBbsvn6jmd_orerNPmRnNmOmfr42DOsebYUgnbrnrGs6Ydb_IgjtdJmr08pnNHeZjXuOiPn0NDAzMzsgdhanCIhalabg8fW73Kzx18_vKv6q6n7s9oeI_UK-BqjnEjaDkQHE-G30u5AcMPM_IHkgyuESJoHK5PzQCyq4wlEdKa5BMM59-ZK6_04gtGcMimdm51uiD9DIK9juEg1p3DqIhT64uJf0a7GRbdEU8SNsab5MkkWlifbtiMojfYSLWLyI8KFyHDZvlObR7vxuydxcotHDahUf9ls1KqL34Q6S9qMY2mc9YKWPM9FOUZzn-43xV78W3Vm7ePaB_TCBYNPfXloXzIKHhHY0DquSwq4obHw3yMlJXH2EQWGXTmxJHgRMiUZBhp0FpivMqge1vO3K7VbW56R9vQyQAu5qN7-H6ne28nTWhydRKJyEHn80d-9YJ4DgogehrN8XnMRgtdJ1_FjUsef0nrcN5VIh8eqAZZHy2li2hPTomlhS_owdlMs7mGp8qYaeHuN-78mVQaMpK1vF9Q9rmgPBhIEIr4ZF1Nbl3ZEy3oL5CzK8TKqKuvJB1vMekZQWqNduOisXUDStIHeRvxhHLX0H5zmuxAQo6UEwFKMyR5zTw9thctfiVsmFAok63EQ&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'most_reacted_comments': [{'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Black Pink In-dian area :>',
+                             'comment_time': datetime.datetime(2022, 8, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/572252007714551',
+                             'commenter_name': 'Le Huy',
+                             'commenter_url': 'https://facebook.com/tvt.sk?eav=AfZjwL7wS_a9oKWMj1rUNOp_QQBSozSGuUS3UUiRoqVcFRapd99meYug3sIZ1aqhfV0&fref=nf&refid=52&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Black Pink In-dian area :>',
+                             'comment_time': datetime.datetime(2022, 8, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/572252007714551',
+                             'commenter_name': 'Le Huy',
+                             'commenter_url': 'https://facebook.com/tvt.sk?eav=AfZjwL7wS_a9oKWMj1rUNOp_QQBSozSGuUS3UUiRoqVcFRapd99meYug3sIZ1aqhfV0&fref=nf&refid=52&__tn__=R&paipv=0'}],
+  'most_replied_comments': [],
+  'post_text': 'Tính debut sang Bollywood hay gì 👌👌👌',
+  'post_time': datetime.datetime(2022, 7, 31, 22, 42),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid0A1xcCxWxG2enDPssmY9ZMRAes16aUEUCP9Wv4WZLUbupM3XUxuCLXUEEQiEDH2UQl&id=100007582690558&eav=Afax7uP4ZderkuSIvnHX9kaxxhKMtWbnnJeW4OcHlpTz3W6rFpewubgV843QT8_LKq8&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY8kl0f82zOa4k4fpCGQxx4kchD3vwlkJTxUV7ymWd4votTWW75mt2_bqvdBu3erdr8Z9xVf9Ef5SerasU0RXh8x2MtgAqBdQ8tLxeUrcleGoEiFcEiYK_XwppYDkdPjEFgGA-xITamdvLgagBSQ13D9tnWrXCBCryKfNZbKItUPNwutuTiPVbtBwcN2A4TjAkXMIw51_ndyxkpG7qO2GarCnb76nthJeL7nIIqtmFXqHmthQ0ULqmx8dslMHyay7Qw3JNRqssYvSZqyWZZaqMjXsDxkvCe_UO26LwWJzxz2-z3xe1u9p1VsZQol1eAnMkJsIRQjliumalx03HDwtDZ_9nXI6UjKsxSSOe4zEhhfeW1TaKMuuUMhYWs8o-jLLMRph6xvaWxEmsRSR5AcREDlE5OdkLAIfKgIlF76uLdxJYpgJDCT2BSfouunaR6w31eDtHTG4-YpFkF32rGMFCb6ZhSNzP6eaZn429WMfLXFKeUrXrUAI3v_aaJ2hKi4fOqb99BHtaAoq9PvWfSvxq0MVcA9Zc4xlv7pN-Ori0vyXvkq5n_LQizrjlQmkEjvynJgjgesPyRDf6sbT1PUVA6A5Y8Z_tHCa5MUlr3pVmnOvnS2FT1iivlPb6SOCCOPT_BcFOLalliHixOboWxYaSsxssFFQVpS7mGOIuKLVhV7GCDQhAIZOAi-ay3S-Dkgvdos-yXOdVe-jWzPI6yND9jfBWKAbMHBMQ&__tn__=%2As%2As-R&paipv=0',
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfZCQyofKl2NVoi0FORusTvTWHXEvGcdAa_jG2juCG6u9QLqSUorfS-sqIGNzypcA6U&_ft_=encrypted_tracking_data.0AY8kl0f82zOa4k4fpCGQxx4kchD3vwlkJTxUV7ymWd4votTWW75mt2_bqvdBu3erdr8Z9xVf9Ef5SerasU0RXh8x2MtgAqBdQ8tLxeUrcleGoEiFcEiYK_XwppYDkdPjEFgGA-xITamdvLgagBSQ13D9tnWrXCBCryKfNZbKItUPNwutuTiPVbtBwcN2A4TjAkXMIw51_ndyxkpG7qO2GarCnb76nthJeL7nIIqtmFXqHmthQ0ULqmx8dslMHyay7Qw3JNRqssYvSZqyWZZaqMjXsDxkvCe_UO26LwWJzxz2-z3xe1u9p1VsZQol1eAnMkJsIRQjliumalx03HDwtDZ_9nXI6UjKsxSSOe4zEhhfeW1TaKMuuUMhYWs8o-jLLMRph6xvaWxEmsRSR5AcREDlE5OdkLAIfKgIlF76uLdxJYpgJDCT2BSfouunaR6w31eDtHTG4-YpFkF32rGMFCb6ZhSNzP6eaZn429WMfLXFKeUrXrUAI3v_aaJ2hKi4fOqb99BHtaAoq9PvWfSvxq0MVcA9Zc4xlv7pN-Ori0vyXvkq5n_LQizrjlQmkEjvynJgjgesPyRDf6sbT1PUVA6A5Y8Z_tHCa5MUlr3pVmnOvnS2FT1iivlPb6SOCCOPT_BcFOLalliHixOboWxYaSsxssFFQVpS7mGOIuKLVhV7GCDQhAIZOAi-ay3S-Dkgvdos-yXOdVe-jWzPI6yND9jfBWKAbMHBMQ&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'most_reacted_comments': [],
+  'most_replied_comments': [{'comment_reply_count': 5,
+                             'comment_text': 'Khoẻ k',
+                             'comment_time': datetime.datetime(2021, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/3082357012027025',
+                             'commenter_name': 'Uyênn',
+                             'commenter_url': 'https://facebook.com/profile.php?id=100004338256927&eav=AfYSUqVBTkDZoEWJs_w3Nl_9HVX7gD87PbRfoRMv1-i8jm7gGaStm4J-KaIF2OyNbAY&fref=nf&refid=52&__tn__=R&paipv=0'},
+                            {'comment_reply_count': 5,
+                             'comment_text': 'Khoẻ k',
+                             'comment_time': datetime.datetime(2021, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/3082357012027025',
+                             'commenter_name': 'Uyênn',
+                             'commenter_url': 'https://facebook.com/profile.php?id=100004338256927&eav=AfYSUqVBTkDZoEWJs_w3Nl_9HVX7gD87PbRfoRMv1-i8jm7gGaStm4J-KaIF2OyNbAY&fref=nf&refid=52&__tn__=R&paipv=0'}],
+  'post_text': 'Best Friend Forever but i wish someone give me F =)))))))))))',
+  'post_time': datetime.datetime(2021, 12, 11, 13, 51),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid0e6AzSXrsKf2GyfCEnfnmYUo3Gp8mo9Z1ACuwZUsqtoTjDQyuQiTg2Z9kEpBJBT1ql&id=100007582690558&eav=AfbezS0CAlqnjm4fIpi2OkEuLpmgb1dIoQMKhd9OEEk6etRjMRpp1EA9xlqf4rytMeg&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY-pY7_fj9Dl5YCTqRPdHu4w1c6TpJjigZbFLWb8mgofnWm7waG4zFObixJwH9J3lwyzsLOAaiD8hv4X37vkrsHe0vGBJjlzYR9k5051cxI4YPtFse2vKe1gjcCNuHHpLY6Pi2e3bXlLj0Hv6HNyFjca8BoDWQozg7MfZR1xoYEii9Ez1k-2zat3UoG0vBMAyyT7zXp__mX823CD7CyLq887C5C6MVoO_tms9dqtRH_qPr3BO3UVFGwDHergMWWDTvEKSNKtSUB-LqxkA_m1jtZd7XpyfX1q_w5SlQLrtk3WKdg1ad2m-QThu4B2mHmPqZitmV2Ei8rHyV0imbVj_rYPDjC1GnGnvo4OU6HdklyWZghEDdpokXwNG15R7lMlVIWMJmWtqzfY9_0kJDdEhE3N6qQL_3jU8qVUldJRh0r7il5zLoVTVNIZO9x1JdHvJkmVs7YX2a_Kzb-h65eWZfkZqjTICG510FdZVJzTcRWSch3DT0Oc-09D_d7KPqifHxtYeTF5LYZTjNQ6JydzAoWVFNI4tsIjUDGyCb_U4e_CLs7fyaH8l6uGzlzlfu4mKxC960fYhKo9mH-ZnYEAEghKOubQT0M9AkaQlHCtzvwfXvVKA2nl5EPWZrEjCDlFJCmjjTBY3TYz4kAJB6O3dSscwOmqgCOIPCoT1XFapbrNzV2tzkZpItdquZ1XbR3lBu2Q-pLO3eCl0nAqodFA27ufEk9EVFBuEsMg022ysFs-iJX5YDngxRNZzQp5rPzZa25L&__tn__=%2As%2As-R&paipv=0',
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfaGpyhk3kjd3muGKbKQXrDfrKRqeRCuVoGPYY-0uIoQ0W3vAUfKQE-d1q9wCWOKEBE&_ft_=encrypted_tracking_data.0AY-pY7_fj9Dl5YCTqRPdHu4w1c6TpJjigZbFLWb8mgofnWm7waG4zFObixJwH9J3lwyzsLOAaiD8hv4X37vkrsHe0vGBJjlzYR9k5051cxI4YPtFse2vKe1gjcCNuHHpLY6Pi2e3bXlLj0Hv6HNyFjca8BoDWQozg7MfZR1xoYEii9Ez1k-2zat3UoG0vBMAyyT7zXp__mX823CD7CyLq887C5C6MVoO_tms9dqtRH_qPr3BO3UVFGwDHergMWWDTvEKSNKtSUB-LqxkA_m1jtZd7XpyfX1q_w5SlQLrtk3WKdg1ad2m-QThu4B2mHmPqZitmV2Ei8rHyV0imbVj_rYPDjC1GnGnvo4OU6HdklyWZghEDdpokXwNG15R7lMlVIWMJmWtqzfY9_0kJDdEhE3N6qQL_3jU8qVUldJRh0r7il5zLoVTVNIZO9x1JdHvJkmVs7YX2a_Kzb-h65eWZfkZqjTICG510FdZVJzTcRWSch3DT0Oc-09D_d7KPqifHxtYeTF5LYZTjNQ6JydzAoWVFNI4tsIjUDGyCb_U4e_CLs7fyaH8l6uGzlzlfu4mKxC960fYhKo9mH-ZnYEAEghKOubQT0M9AkaQlHCtzvwfXvVKA2nl5EPWZrEjCDlFJCmjjTBY3TYz4kAJB6O3dSscwOmqgCOIPCoT1XFapbrNzV2tzkZpItdquZ1XbR3lBu2Q-pLO3eCl0nAqodFA27ufEk9EVFBuEsMg022ysFs-iJX5YDngxRNZzQp5rPzZa25L&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'most_reacted_comments': [{'comment_reaction_count': 1,
+                             'comment_reactions': {'sad': 1},
+                             'comment_text': 'Lê Huy gầy nữa nhỉ\n'
+                                             'Nhìn dáng chuẩn hơn hui củi khô '
+                                             'nhèo',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860588834203845',
+                             'commenter_name': 'Hán Bích Hạnh',
+                             'commenter_url': 'https://facebook.com/hanbichhanh?eav=AfZOiknx9G4Xkb5lK_V2epBjlTmSL1siTclqNZFqAvAeZdEPdWIy4ACQZI1I5XDibjM&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'sad': 1},
+                             'comment_text': 'Lê Huy gầy nữa nhỉ\n'
+                                             'Nhìn dáng chuẩn hơn hui củi khô '
+                                             'nhèo',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860588834203845',
+                             'commenter_name': 'Hán Bích Hạnh',
+                             'commenter_url': 'https://facebook.com/hanbichhanh?eav=AfZOiknx9G4Xkb5lK_V2epBjlTmSL1siTclqNZFqAvAeZdEPdWIy4ACQZI1I5XDibjM&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'sad': 1},
+                             'comment_text': 'Nguyễn Hoàng Phú huy bán độ có '
+                                             'tiền sang thái rồi',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860596180869777',
+                             'commenter_name': 'Xuân Nhật',
+                             'commenter_url': 'https://facebook.com/mxnhat1610?eav=AfYtai_eOEz2VbFra7uLVfr8CGt83BJlfoWC76SexxxqfAl_IE2MDf4jRULi1-dTmJ8&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Mập đã đỡ mập và mlem mlem hơn '
+                                             'xưa meow meow 🤣🤣',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860588817537180',
+                             'commenter_name': 'Lê Huy',
+                             'commenter_url': 'https://facebook.com/huylealpha?eav=AfZ7OyQNYdJBH-QKi5vqbk7efyQN6Mp-KiCvsyNHmnhJvrB_xvfi0oXKYfDpdF2Kd5E&fref=nf&refid=13&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Xuân Nhật nói dối làm trái tim '
+                                             'đau, nói dối làm tim tan nát 😘😘',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860596634203065',
+                             'commenter_name': 'Lê Huy',
+                             'commenter_url': 'https://facebook.com/huylealpha?eav=AfbBwgTNJhk11DJvXTuiXxAUp5B-TjSTw8HbO5JDi9q-_Bij_LWKB0o7w1tM6CuDYG4&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Nguyễn Thị Quỳnh Vân vẫn luôn ốm '
+                                             'vậy mà :3',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860619764200752',
+                             'commenter_name': 'Xuân Nhật',
+                             'commenter_url': 'https://facebook.com/mxnhat1610?eav=AfbJ9sxARU2WhaabAx2758pNkuzKkK9tB2s7PFUxTknFRh24o9nNClputaf-umOMpBk&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Nguyễn Đức Chinh gầy bao năm nay '
+                                             'rùiiiiiiiii',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860645137531548',
+                             'commenter_name': 'Xuân Nhật',
+                             'commenter_url': 'https://facebook.com/mxnhat1610?eav=AfZLt5tOPjB6LMpAUO50rzBLboerU48WRdSEazDjyQxw5u1CMNtKVSssU99kEDu6WsI&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Nguyễn Thuu anh vẫn vậy mà :3',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860704047525657',
+                             'commenter_name': 'Xuân Nhật',
+                             'commenter_url': 'https://facebook.com/mxnhat1610?eav=AfZl6mFdPcCPZn8QVwj2LTdwE3uyykH1kjUq7CpsjTUKgM4VTiM0qaT1sDJIyjXo3cY&fref=nf&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Đĩ z =))) engrisk đồ :) tiếng '
+                                             'Nhật mô? Bắn ra đi chớ :)))',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860728567523205',
+                             'commenter_name': 'Tuấn Kiệt',
+                             'commenter_url': 'https://facebook.com/KietBunzz?eav=AfbYqC8fAp7mvd_368BKNTsGiBEA7arDsZE7slLnOOwGoN5KTPoGDcAOL0MZQrO2Wuw&fref=nf&refid=13&__tn__=R&paipv=0'},
+                            {'comment_reaction_count': 1,
+                             'comment_reactions': {'haha': 1},
+                             'comment_text': 'Chấm hỏi',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2923009131295148',
+                             'commenter_name': 'Tuấn Nguyễn',
+                             'commenter_url': 'https://facebook.com/hades154?eav=AfZ_MwITv8JIa40UfQcWQhd_trAugYEuCYD0ZQINVZRI1Xpq8vYYhMOVUZPjnWDK4IA&fref=nf&refid=13&__tn__=R&paipv=0'}],
+  'most_replied_comments': [{'comment_reply_count': 10,
+                             'comment_text': 'Mập cao lên hở',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860588324203896',
+                             'commenter_name': 'Hán Bích Hạnh',
+                             'commenter_url': 'https://facebook.com/hanbichhanh?eav=AfYC1eOsv1Jg9vsrHYKVBwTOlFmJ1rSDlwdqKOnB917IE3q8oFmvHcZtQ74eQRRkt0o&fref=nf&refid=13&__tn__=R&paipv=0'},
+                            {'comment_reply_count': 10,
+                             'comment_text': 'Mập cao lên hở',
+                             'comment_time': datetime.datetime(2020, 12, 7, 0, 0),
+                             'comment_url': 'https://facebook.com/2860588324203896',
+                             'commenter_name': 'Hán Bích Hạnh',
+                             'commenter_url': 'https://facebook.com/hanbichhanh?eav=AfYC1eOsv1Jg9vsrHYKVBwTOlFmJ1rSDlwdqKOnB917IE3q8oFmvHcZtQ74eQRRkt0o&fref=nf&refid=13&__tn__=R&paipv=0'}],
+  'post_text': 'But one of these things is not like the others\n'
+               'Like a rainbow with all of the colors\n'
+               'Baby doll, when it comes to a lover\n'
+               "I promise that you'll never find another like\n"
+               'me - me - meow - meow meow meow meow meow',
+  'post_time': datetime.datetime(2021, 2, 13, 17, 37),
+  'post_url': 'https://facebook.com/story.php?story_fbid=2860587024204026&substory_index=0&id=100007582690558&eav=AfbKjCbgkIc5vAna1uzbmr2kz67eyuIFyPRkHtI1vzuuI5HFUqJW_jx6DdT48o1Fvcc&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY944j8oZW7IqJXnDgjp4w34qumOdMLyQXQfdeJA9SvDpDNPnSkOn22sWLMasowYrCPQt7r4IWSm3uLaUYKG08nYehJiqdv6OMfUrihh3ROdMCrKm7aPbsd_QNfF_33ENgvQp13QYzrW6Wtv87vnRwyeu22FochvHs1BK1g31HfCdIavJNXGZFO8dfl9mlTQzbQcCKwoJ2RINf37-Y0u6cGZR5xRpIawj70326_Iv0IkTe190WvnSEvmC3CAC1Py36UVpxloGtCPp6tVc6cpvPa8AfpVh9vAYRTJw45aoCZB8ZtK23mAO7bzS1hveowWW2BLuLClVVo94VVZQ_XZ9J_B4ULQSH7XMHzp1YA_xoZLL7ID3CmudMcYzUFjy-WGE6BwoLoVHRtGx3Z9U9UAmOlcM6EXCcCcKEel5zBTe1EywG8OfiHwneZmbfYf56WCOQV2K8uN734fsBrvLvRNmDXbZc1VfKvCIs4HKh-ygHvc3cwx8A4CEsHOXbJKk4N_L5zfn9QaSb8raZL-uEezcQb0Y2QOyyiygFMsZ90ApPeQyL8dejFba20YsmvTHzatS1FwFzkvUe7Ing4XBuW2ZT1t2WCuCqJ7cgw5MNIyUXihHuu4ATIwbcaKxWr3cJoXHGkMxAGDq2UGrxlJUH23GXsUBDJWUFj4VNNNTN7DCl2cVR9UngYJ0bGzjPaJ9K5TgU5wz0cyz3Jwc1fKRLUmIBeGjKkGHyYgogqq5TF7mLE_q5qNufQ53miDS4Oo3apA_NeQzUqrfcGCTV_WpvEu365LHT6_&__tn__=%2As%2As-R&paipv=0',
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfbgI1I6qabxR0hp0gNr62v-izuy0SiueSbs1M75YICk2kLl8w9uRVgcrQeruQzSU44&_ft_=encrypted_tracking_data.0AY944j8oZW7IqJXnDgjp4w34qumOdMLyQXQfdeJA9SvDpDNPnSkOn22sWLMasowYrCPQt7r4IWSm3uLaUYKG08nYehJiqdv6OMfUrihh3ROdMCrKm7aPbsd_QNfF_33ENgvQp13QYzrW6Wtv87vnRwyeu22FochvHs1BK1g31HfCdIavJNXGZFO8dfl9mlTQzbQcCKwoJ2RINf37-Y0u6cGZR5xRpIawj70326_Iv0IkTe190WvnSEvmC3CAC1Py36UVpxloGtCPp6tVc6cpvPa8AfpVh9vAYRTJw45aoCZB8ZtK23mAO7bzS1hveowWW2BLuLClVVo94VVZQ_XZ9J_B4ULQSH7XMHzp1YA_xoZLL7ID3CmudMcYzUFjy-WGE6BwoLoVHRtGx3Z9U9UAmOlcM6EXCcCcKEel5zBTe1EywG8OfiHwneZmbfYf56WCOQV2K8uN734fsBrvLvRNmDXbZc1VfKvCIs4HKh-ygHvc3cwx8A4CEsHOXbJKk4N_L5zfn9QaSb8raZL-uEezcQb0Y2QOyyiygFMsZ90ApPeQyL8dejFba20YsmvTHzatS1FwFzkvUe7Ing4XBuW2ZT1t2WCuCqJ7cgw5MNIyUXihHuu4ATIwbcaKxWr3cJoXHGkMxAGDq2UGrxlJUH23GXsUBDJWUFj4VNNNTN7DCl2cVR9UngYJ0bGzjPaJ9K5TgU5wz0cyz3Jwc1fKRLUmIBeGjKkGHyYgogqq5TF7mLE_q5qNufQ53miDS4Oo3apA_NeQzUqrfcGCTV_WpvEu365LHT6_&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'}]
+
+Please choose what you want to do:
+  1. Ranking top users have the most posts, reacts, comments, shares
+  2. Ranking top comments have the most reacts, replies
+  3. Ranking top posts have the most reacts, comments, shares
+  4. Crawl all comments of a post followed by regex
+    
+
+React ranking:
+[{'comment_counter': 96,
+  'post_text': 'Hoi An with my friend\n📸 Phương Thanh',
+  'post_time': datetime.datetime(2022, 4, 22, 19, 37),
+  'post_url': 'https://facebook.com/phuongthanh.huynh2910?eav=AfZVDFzSThSGG-rCKIWluI4YgRFaDmCaunIXp09FEfK2xXAdNsklnydl_Y-yIeDixaw&_ft_=encrypted_tracking_data.0AY8Zb002_wBgKpTrPHZcyr9X5HkfDUPvfHrvLvLik_EINgkSm1Vj6yRbkyddaoDhFS9MV2tIcaFkpF-3NV2tslL832mSNyWY4ICGvf1pJ2x2LwZuUryst03Ar9xBrokiFJHHdr7v6X0RX30mHlVgE4sXzpuYmAm66wWCjMqod4oUSxajtWGhFtuzai4gYjP5KHp4IwUD1eHGzfcAvOOnCSuz836OntuxmyOfreKQd_xXQxaPbmXeA2j7eYV7EYSdZxyL-Ij42glHqTENqhJR8ZEf82nEpe6mvyoQRPJZpkSmb3yAc5BzAwERisKoPFGGAsWm_Je9Kn_ZB08CM1LfdvKGbuDt3_9UKC-6xK6c5TJhjj5I2q5b63hMDYYPdafpjR9HPlHz7iWCOj9bZMp6YrrG4KlYX42zzc-0mzia1CELyXyn0e_lNLj972Nk_xBN1oiFt9Fl38-xBLzj_7bk5A_--XxCvQdWVxQji-9rpXwFA376DbcwuxtixiKqocj9JtOL5K5jbOVeBEw27TAyXvDdDyhhb9dzypjEbLgnQWwRw4drR9f9Vy_hKeC3ruISSOBVuJtcKXbEf1nQv7jHnhMScdJQ8xk9Ua1ykL6NM4PF3lMlirv_87BOTIHJYqhe8KOMexwkD5d60yasUE6UsvmtcWIF_zguaBohV0rPadtoEAl0W57hvWPCkoTszpia6YN03lDe6wr0J6tk3OJz6oT7NHC4xjgIzR_mvqlArqVqUm5DLMJ0Q5pM54Q47hRBzDvw6VAyhYfc46GKWGdB7vjdrYaOkwioeG8xVGgZji89O9RRl2Y3G1ZCWOSap-p4m8fPi4iEb8tV75Cx3JnZ14Iqix52j8lxl4ST-w&__tn__=%2As-R&paipv=0',
+  'react_counter': 408,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/chinh1108?eav=AfapFEKVrlW8fuFweYkA3f3Mj24FW5h4r2PT_9Xc5aKam5ZTubOWvIg91Jx41CKVkC4&_ft_=encrypted_tracking_data.0AY8Zb002_wBgKpTrPHZcyr9X5HkfDUPvfHrvLvLik_EINgkSm1Vj6yRbkyddaoDhFS9MV2tIcaFkpF-3NV2tslL832mSNyWY4ICGvf1pJ2x2LwZuUryst03Ar9xBrokiFJHHdr7v6X0RX30mHlVgE4sXzpuYmAm66wWCjMqod4oUSxajtWGhFtuzai4gYjP5KHp4IwUD1eHGzfcAvOOnCSuz836OntuxmyOfreKQd_xXQxaPbmXeA2j7eYV7EYSdZxyL-Ij42glHqTENqhJR8ZEf82nEpe6mvyoQRPJZpkSmb3yAc5BzAwERisKoPFGGAsWm_Je9Kn_ZB08CM1LfdvKGbuDt3_9UKC-6xK6c5TJhjj5I2q5b63hMDYYPdafpjR9HPlHz7iWCOj9bZMp6YrrG4KlYX42zzc-0mzia1CELyXyn0e_lNLj972Nk_xBN1oiFt9Fl38-xBLzj_7bk5A_--XxCvQdWVxQji-9rpXwFA376DbcwuxtixiKqocj9JtOL5K5jbOVeBEw27TAyXvDdDyhhb9dzypjEbLgnQWwRw4drR9f9Vy_hKeC3ruISSOBVuJtcKXbEf1nQv7jHnhMScdJQ8xk9Ua1ykL6NM4PF3lMlirv_87BOTIHJYqhe8KOMexwkD5d60yasUE6UsvmtcWIF_zguaBohV0rPadtoEAl0W57hvWPCkoTszpia6YN03lDe6wr0J6tk3OJz6oT7NHC4xjgIzR_mvqlArqVqUm5DLMJ0Q5pM54Q47hRBzDvw6VAyhYfc46GKWGdB7vjdrYaOkwioeG8xVGgZji89O9RRl2Y3G1ZCWOSap-p4m8fPi4iEb8tV75Cx3JnZ14Iqix52j8lxl4ST-w&__tn__=C-R&paipv=0',
+  'username': 'Nguyễn Đức Chinh'},
+ {'comment_counter': 145,
+  'post_text': 'みなさん、こにちは。\n'
+               'Xin chào mọi người,\n'
+               'Gần đây nhóm tụi mình đang tham gia cuộc thi "Sun* Be the '
+               'change! 2021".\n'
+               'Dưới đây là video dự thi do nhóm tụi mình thực hiện về chủ đề '
+               '"2100年のITニュース - Bản tin IT năm 2100".\n'
+               'RấtXem thêm mong được sự ủng hộ và tương tác của mọi người '
+               'bằng cách coi video.\n'
+               'Cám ơn mọi người rất nhiều😍\u3000ありがとうございました。\n'
+               '\n'
+               '#予選ラウンドSun*BeTheChange!2021\n'
+               '#teamブラックピンク\n'
+               '#2100年のITニュース\n'
+               '\n'
+               'https://www.youtube.com/watch?v=6OmK4KN9AxQ&ab_channel=%E4%BA%88%E9%81%B8%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89Sun%2aBeTheChange%212021',
+  'post_time': datetime.datetime(2021, 4, 12, 22, 4),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid024pkrxn4NPEynBs6GsxKed8QD8EG17qMYWTGik4Hr11eRYVXsdKPU93vbddeay2zYl&id=100006408250439&eav=AfZHFgp6jjBn5UlgA3me3Bx8B_VdpIiQgE6BZJLg7vQUWWr3EWfAmdE8btCXxYxhC2o&paipv=0',
+  'react_counter': 371,
+  'share_counter': 1,
+  'user_url': 'https://facebook.com/chinh1108?eav=AfZ-XR17ZzlJk_IISN3p-5H-YDpK6X1Tuw6ja2fv5I752iB6yFOygDa1XytfTyZQGFo&_ft_=encrypted_tracking_data.0AY8Adih4O_TREWKaoYPq2X6Za8Bx1azfABMtufBxL4T-rRzX83D91F4T8DrIgRqxn6igen1RYVW2KLT2QBkwpKT_D16MFIrw-bDsbt1l3WaIsmThIdu9fHTMNtgRukbTHwqv-4S1Ehzobb88OrFwlbSQ2r-7qjXDpuADtPIu3bi_Lb_NN5ykR35bTsz1cfLANaScUgTqr9vsChSUtstSGwGZ_fy1ZEoW6B4yo96Dqk_8o0u5jHbNtEzyq3P-XecYCi3RmKBAAGD3f0YBsxmpeo2qfIk_MQXiHPr7Cl3bVc1okQuIMGRsvAVHYM0CZnOubmt3FyUmq0cCHc-VQhxZQcw-Ok7wxmzIq8y84R-6mo-d0yS3Kb6KsDkZ1btSfSqf1ep20-1fqeLz_LaiaR2ZDRRTxrBEaN_edO419BEUBbGijmILDA4KBlTEmgyt0PDE_HNhogOFdfwC_N-xtovWPkMMY-e7NdEvC0Gln1YpsYxX10BQ3S-eVFLVWRG1nLK3TzqRmjS5L3ybhMmso5hoPXEMmZCXJAG2pPdLMKXoG6KPGjwD0M2vjDEJ7yoj7nJCnNCfIWRiIQo7I3haFDmF_i2hVWHyLUB2y-UuG2kD8dW4D-xm5J_KdbuPrUOfF55GGSR97hitVPzygxuovDgQPWRlfbaBilNLlkMKEYDNTWLc23kqVhoYTvEidL1mSSas0xdo9DP0qjA32CZyU6jzNAqb9GEu2Y7mxtrTtM7BSDpkRA&__tn__=C-R&paipv=0',
+  'username': 'Nguyễn Đức Chinh'},
+ {'comment_counter': 23,
+  'post_text': 'Xin chào đây là bạn Nhật 9 tuổi =))))\nTạm biệt',
+  'post_time': datetime.datetime(2021, 4, 21, 22, 34),
+  'post_url': 'https://facebook.com/story.php?story_fbid=2910663439196384&substory_index=0&id=100007582690558&eav=AfbDwiYwuaSbGzSXQC1Kek8TIHc4sX_iwx_a3unyok0UHsUZXih9F18mUKnCklmiR1M&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY8GSNFTni8q5wXdAL6QlyItqaOBSJ4B5NFGY_Xgc4tvffzfyF2D0BAhRscFDkqcBc3-6pyb4qIm2gReVqASq8QdtZSaTJqgjTgQuq5wtm4Z45VDNbg3iZs2oSu982ws6wDNM7yhLT06PqyNtS_IC36kSLBRyBrPdraZaG8_N-rEUxmn26REB_YpRwpKdxtuFbHKdpWFvs2WCGTK7Zzbcxqo_kf7u_Y0QrWq7gFFGTWbsu9ZGgsLQgjuJzz3VUE1QPrDFcEKtubTynkQI045LUyib8Ab9-Ap-3TI83TlUWABZWNL2xpNCb3JXBYbJZfrHGzaFF1D-U83-LIiVk8oo2u-9BdHU_P_TdBw233w6i4bgw6HgQ9GiAjpZwvCVt10tc246Mfvn5B_o_fogzh3TNaHSqoCjNMMdbWh-Rz2ZTCf8hIieNsTnniTYWpjSyFbIZBWuUl53PKhtoty5uNIuRhGavyD6HH0VnayRYYmHTQu2ZDft93co7o8rTSd2V-pdljYeNgrMRjob7zTlDg5sGSwBtFVtiNSam-N6N9RsG77axJjMXWVOAtYWWPnJ1cuOxHBOJ6mACD1A_3F_fDUYBPfoYK57aMTJQEqB13Riy7aTQOVBvukJfC6kYH_PE7g_c35WFNa7xmZCEaFmdZtlOp0hyB-soN8SXFr5pzkMV9eTaGpAnyV0TPMUyEpkpJspw8NkZpyQHqJydHWdHnKQH-SjIJGKd01ZE1GW5NOXt9cPXYyBSuTC0F4yI25zZ22YEcU39u_7lb6vOwfSiW4IW3zf0BPIt8&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 139,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfZj2KJSIhlMXOewFAXqXq3-FOGpJqbwywJmgdDq1ESZHRKSGdqTGDOmMVhw5VMVxD8&_ft_=encrypted_tracking_data.0AY8GSNFTni8q5wXdAL6QlyItqaOBSJ4B5NFGY_Xgc4tvffzfyF2D0BAhRscFDkqcBc3-6pyb4qIm2gReVqASq8QdtZSaTJqgjTgQuq5wtm4Z45VDNbg3iZs2oSu982ws6wDNM7yhLT06PqyNtS_IC36kSLBRyBrPdraZaG8_N-rEUxmn26REB_YpRwpKdxtuFbHKdpWFvs2WCGTK7Zzbcxqo_kf7u_Y0QrWq7gFFGTWbsu9ZGgsLQgjuJzz3VUE1QPrDFcEKtubTynkQI045LUyib8Ab9-Ap-3TI83TlUWABZWNL2xpNCb3JXBYbJZfrHGzaFF1D-U83-LIiVk8oo2u-9BdHU_P_TdBw233w6i4bgw6HgQ9GiAjpZwvCVt10tc246Mfvn5B_o_fogzh3TNaHSqoCjNMMdbWh-Rz2ZTCf8hIieNsTnniTYWpjSyFbIZBWuUl53PKhtoty5uNIuRhGavyD6HH0VnayRYYmHTQu2ZDft93co7o8rTSd2V-pdljYeNgrMRjob7zTlDg5sGSwBtFVtiNSam-N6N9RsG77axJjMXWVOAtYWWPnJ1cuOxHBOJ6mACD1A_3F_fDUYBPfoYK57aMTJQEqB13Riy7aTQOVBvukJfC6kYH_PE7g_c35WFNa7xmZCEaFmdZtlOp0hyB-soN8SXFr5pzkMV9eTaGpAnyV0TPMUyEpkpJspw8NkZpyQHqJydHWdHnKQH-SjIJGKd01ZE1GW5NOXt9cPXYyBSuTC0F4yI25zZ22YEcU39u_7lb6vOwfSiW4IW3zf0BPIt8&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 111,
+  'post_text': 'But one of these things is not like the others\n'
+               'Like a rainbow with all of the colors\n'
+               'Baby doll, when it comes to a lover\n'
+               "I promise that you'll never find another like\n"
+               'me - me - meow - meow meow meow meow meow',
+  'post_time': datetime.datetime(2021, 2, 13, 17, 37),
+  'post_url': 'https://facebook.com/story.php?story_fbid=2860587024204026&substory_index=0&id=100007582690558&eav=AfbKjCbgkIc5vAna1uzbmr2kz67eyuIFyPRkHtI1vzuuI5HFUqJW_jx6DdT48o1Fvcc&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY944j8oZW7IqJXnDgjp4w34qumOdMLyQXQfdeJA9SvDpDNPnSkOn22sWLMasowYrCPQt7r4IWSm3uLaUYKG08nYehJiqdv6OMfUrihh3ROdMCrKm7aPbsd_QNfF_33ENgvQp13QYzrW6Wtv87vnRwyeu22FochvHs1BK1g31HfCdIavJNXGZFO8dfl9mlTQzbQcCKwoJ2RINf37-Y0u6cGZR5xRpIawj70326_Iv0IkTe190WvnSEvmC3CAC1Py36UVpxloGtCPp6tVc6cpvPa8AfpVh9vAYRTJw45aoCZB8ZtK23mAO7bzS1hveowWW2BLuLClVVo94VVZQ_XZ9J_B4ULQSH7XMHzp1YA_xoZLL7ID3CmudMcYzUFjy-WGE6BwoLoVHRtGx3Z9U9UAmOlcM6EXCcCcKEel5zBTe1EywG8OfiHwneZmbfYf56WCOQV2K8uN734fsBrvLvRNmDXbZc1VfKvCIs4HKh-ygHvc3cwx8A4CEsHOXbJKk4N_L5zfn9QaSb8raZL-uEezcQb0Y2QOyyiygFMsZ90ApPeQyL8dejFba20YsmvTHzatS1FwFzkvUe7Ing4XBuW2ZT1t2WCuCqJ7cgw5MNIyUXihHuu4ATIwbcaKxWr3cJoXHGkMxAGDq2UGrxlJUH23GXsUBDJWUFj4VNNNTN7DCl2cVR9UngYJ0bGzjPaJ9K5TgU5wz0cyz3Jwc1fKRLUmIBeGjKkGHyYgogqq5TF7mLE_q5qNufQ53miDS4Oo3apA_NeQzUqrfcGCTV_WpvEu365LHT6_&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 137,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfbgI1I6qabxR0hp0gNr62v-izuy0SiueSbs1M75YICk2kLl8w9uRVgcrQeruQzSU44&_ft_=encrypted_tracking_data.0AY944j8oZW7IqJXnDgjp4w34qumOdMLyQXQfdeJA9SvDpDNPnSkOn22sWLMasowYrCPQt7r4IWSm3uLaUYKG08nYehJiqdv6OMfUrihh3ROdMCrKm7aPbsd_QNfF_33ENgvQp13QYzrW6Wtv87vnRwyeu22FochvHs1BK1g31HfCdIavJNXGZFO8dfl9mlTQzbQcCKwoJ2RINf37-Y0u6cGZR5xRpIawj70326_Iv0IkTe190WvnSEvmC3CAC1Py36UVpxloGtCPp6tVc6cpvPa8AfpVh9vAYRTJw45aoCZB8ZtK23mAO7bzS1hveowWW2BLuLClVVo94VVZQ_XZ9J_B4ULQSH7XMHzp1YA_xoZLL7ID3CmudMcYzUFjy-WGE6BwoLoVHRtGx3Z9U9UAmOlcM6EXCcCcKEel5zBTe1EywG8OfiHwneZmbfYf56WCOQV2K8uN734fsBrvLvRNmDXbZc1VfKvCIs4HKh-ygHvc3cwx8A4CEsHOXbJKk4N_L5zfn9QaSb8raZL-uEezcQb0Y2QOyyiygFMsZ90ApPeQyL8dejFba20YsmvTHzatS1FwFzkvUe7Ing4XBuW2ZT1t2WCuCqJ7cgw5MNIyUXihHuu4ATIwbcaKxWr3cJoXHGkMxAGDq2UGrxlJUH23GXsUBDJWUFj4VNNNTN7DCl2cVR9UngYJ0bGzjPaJ9K5TgU5wz0cyz3Jwc1fKRLUmIBeGjKkGHyYgogqq5TF7mLE_q5qNufQ53miDS4Oo3apA_NeQzUqrfcGCTV_WpvEu365LHT6_&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 19,
+  'post_text': 'Chơi với nhau gần 3 năm ròi mới có được 1 tấm ảnh dễ thương '
+               '=))\n'
+               '#CDKN',
+  'post_time': datetime.datetime(2022, 2, 27, 0, 35),
+  'post_url': 'https://facebook.com/hashtag/cdkn?_ft_=encrypted_tracking_data.0AY95Y5jLfgsxaqQWWn3xoawcHMek08qUPZthO6qdT-Atw1EweNm_sY2Fhq4nbEjpOj1JlCmkdk8pokS5w3AD-2GLE5v8yoFCsIBuaj1mvdl9mDCXvnKre20KXIaa_QZgOrZh-Mmc1f1KkkH2rzmTGLUTGMa3KO9StyxS6j6wOIY0aD8X5kB6ShMhQ0fOHkE4wqclsgGmlLSdNphQMKYbnbnd70RB8AJ1QQ4qiNf_zNkIP7zwbPTq7X0dhcoTNWYfz2y1Js-rWpNIOdhgO2JsdtY2XuifAERsklX9eSvIMeseiI_WyhQUVjfeBQifFE0H5STHWIAhvA-BCjmA5wTHsxoYinf2u7xIkSWqFDgt_c-WSCoZhI2dQTONx-M5vz6VoEs-HwNWfOqv8wx1skKLZ_TDlJkQb6tDEbHM8GD59ZoEJ2tA4jyj_ip5BkxuhKRMWb_1seJCO9HiGiERzXTTuHzsppcx7OkMuFUI_RgOTVmVKnW-Dy7JFRqgtXHk2gSN8-0bwzLV8tvfMHVc-yd-VoBGy73JBgiduJ6dZ3V60qOZtx0gze_J6qWZiBNqxUdsvxr7wxn_otoKdX5xHWR3N6a3n8yyYLQDnHgtY9FA_vxsy2AlkpSEvo3oD2u66jLwi1JOlkk2AgQDwXSV9JzHOms4aKP6AqnNae2BifKbemWGqXYSY1wA1DXRkQbmTivyV67BPnwg1OblDowAvgVXnS7bGw3-iEX1cw&__tn__=%2As-R&paipv=0&eav=AfacLprDuuFzQyBc8Bi3WSscpQn4aM6ZtP5YIBAJ3OybcnSDelyBBD36Ja7kDs9_UrU',
+  'react_counter': 133,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/KietBunzz?eav=AfZ4fCBB3ZgsBas8tjLrCXUwSjPYn9H06bcX3DzmloL5XjViDAmgdJeOgpPeKhXvX0M&_ft_=encrypted_tracking_data.0AY95Y5jLfgsxaqQWWn3xoawcHMek08qUPZthO6qdT-Atw1EweNm_sY2Fhq4nbEjpOj1JlCmkdk8pokS5w3AD-2GLE5v8yoFCsIBuaj1mvdl9mDCXvnKre20KXIaa_QZgOrZh-Mmc1f1KkkH2rzmTGLUTGMa3KO9StyxS6j6wOIY0aD8X5kB6ShMhQ0fOHkE4wqclsgGmlLSdNphQMKYbnbnd70RB8AJ1QQ4qiNf_zNkIP7zwbPTq7X0dhcoTNWYfz2y1Js-rWpNIOdhgO2JsdtY2XuifAERsklX9eSvIMeseiI_WyhQUVjfeBQifFE0H5STHWIAhvA-BCjmA5wTHsxoYinf2u7xIkSWqFDgt_c-WSCoZhI2dQTONx-M5vz6VoEs-HwNWfOqv8wx1skKLZ_TDlJkQb6tDEbHM8GD59ZoEJ2tA4jyj_ip5BkxuhKRMWb_1seJCO9HiGiERzXTTuHzsppcx7OkMuFUI_RgOTVmVKnW-Dy7JFRqgtXHk2gSN8-0bwzLV8tvfMHVc-yd-VoBGy73JBgiduJ6dZ3V60qOZtx0gze_J6qWZiBNqxUdsvxr7wxn_otoKdX5xHWR3N6a3n8yyYLQDnHgtY9FA_vxsy2AlkpSEvo3oD2u66jLwi1JOlkk2AgQDwXSV9JzHOms4aKP6AqnNae2BifKbemWGqXYSY1wA1DXRkQbmTivyV67BPnwg1OblDowAvgVXnS7bGw3-iEX1cw&__tn__=C-R&paipv=0',
+  'username': 'Tuấn Kiệt'}]
+
+Comment ranking:
+[{'comment_counter': 145,
+  'post_text': 'みなさん、こにちは。\n'
+               'Xin chào mọi người,\n'
+               'Gần đây nhóm tụi mình đang tham gia cuộc thi "Sun* Be the '
+               'change! 2021".\n'
+               'Dưới đây là video dự thi do nhóm tụi mình thực hiện về chủ đề '
+               '"2100年のITニュース - Bản tin IT năm 2100".\n'
+               'RấtXem thêm mong được sự ủng hộ và tương tác của mọi người '
+               'bằng cách coi video.\n'
+               'Cám ơn mọi người rất nhiều😍\u3000ありがとうございました。\n'
+               '\n'
+               '#予選ラウンドSun*BeTheChange!2021\n'
+               '#teamブラックピンク\n'
+               '#2100年のITニュース\n'
+               '\n'
+               'https://www.youtube.com/watch?v=6OmK4KN9AxQ&ab_channel=%E4%BA%88%E9%81%B8%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89Sun%2aBeTheChange%212021',
+  'post_time': datetime.datetime(2021, 4, 12, 22, 4),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid024pkrxn4NPEynBs6GsxKed8QD8EG17qMYWTGik4Hr11eRYVXsdKPU93vbddeay2zYl&id=100006408250439&eav=AfZHFgp6jjBn5UlgA3me3Bx8B_VdpIiQgE6BZJLg7vQUWWr3EWfAmdE8btCXxYxhC2o&paipv=0',
+  'react_counter': 371,
+  'share_counter': 1,
+  'user_url': 'https://facebook.com/chinh1108?eav=AfZ-XR17ZzlJk_IISN3p-5H-YDpK6X1Tuw6ja2fv5I752iB6yFOygDa1XytfTyZQGFo&_ft_=encrypted_tracking_data.0AY8Adih4O_TREWKaoYPq2X6Za8Bx1azfABMtufBxL4T-rRzX83D91F4T8DrIgRqxn6igen1RYVW2KLT2QBkwpKT_D16MFIrw-bDsbt1l3WaIsmThIdu9fHTMNtgRukbTHwqv-4S1Ehzobb88OrFwlbSQ2r-7qjXDpuADtPIu3bi_Lb_NN5ykR35bTsz1cfLANaScUgTqr9vsChSUtstSGwGZ_fy1ZEoW6B4yo96Dqk_8o0u5jHbNtEzyq3P-XecYCi3RmKBAAGD3f0YBsxmpeo2qfIk_MQXiHPr7Cl3bVc1okQuIMGRsvAVHYM0CZnOubmt3FyUmq0cCHc-VQhxZQcw-Ok7wxmzIq8y84R-6mo-d0yS3Kb6KsDkZ1btSfSqf1ep20-1fqeLz_LaiaR2ZDRRTxrBEaN_edO419BEUBbGijmILDA4KBlTEmgyt0PDE_HNhogOFdfwC_N-xtovWPkMMY-e7NdEvC0Gln1YpsYxX10BQ3S-eVFLVWRG1nLK3TzqRmjS5L3ybhMmso5hoPXEMmZCXJAG2pPdLMKXoG6KPGjwD0M2vjDEJ7yoj7nJCnNCfIWRiIQo7I3haFDmF_i2hVWHyLUB2y-UuG2kD8dW4D-xm5J_KdbuPrUOfF55GGSR97hitVPzygxuovDgQPWRlfbaBilNLlkMKEYDNTWLc23kqVhoYTvEidL1mSSas0xdo9DP0qjA32CZyU6jzNAqb9GEu2Y7mxtrTtM7BSDpkRA&__tn__=C-R&paipv=0',
+  'username': 'Nguyễn Đức Chinh'},
+ {'comment_counter': 111,
+  'post_text': 'But one of these things is not like the others\n'
+               'Like a rainbow with all of the colors\n'
+               'Baby doll, when it comes to a lover\n'
+               "I promise that you'll never find another like\n"
+               'me - me - meow - meow meow meow meow meow',
+  'post_time': datetime.datetime(2021, 2, 13, 17, 37),
+  'post_url': 'https://facebook.com/story.php?story_fbid=2860587024204026&substory_index=0&id=100007582690558&eav=AfbKjCbgkIc5vAna1uzbmr2kz67eyuIFyPRkHtI1vzuuI5HFUqJW_jx6DdT48o1Fvcc&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY944j8oZW7IqJXnDgjp4w34qumOdMLyQXQfdeJA9SvDpDNPnSkOn22sWLMasowYrCPQt7r4IWSm3uLaUYKG08nYehJiqdv6OMfUrihh3ROdMCrKm7aPbsd_QNfF_33ENgvQp13QYzrW6Wtv87vnRwyeu22FochvHs1BK1g31HfCdIavJNXGZFO8dfl9mlTQzbQcCKwoJ2RINf37-Y0u6cGZR5xRpIawj70326_Iv0IkTe190WvnSEvmC3CAC1Py36UVpxloGtCPp6tVc6cpvPa8AfpVh9vAYRTJw45aoCZB8ZtK23mAO7bzS1hveowWW2BLuLClVVo94VVZQ_XZ9J_B4ULQSH7XMHzp1YA_xoZLL7ID3CmudMcYzUFjy-WGE6BwoLoVHRtGx3Z9U9UAmOlcM6EXCcCcKEel5zBTe1EywG8OfiHwneZmbfYf56WCOQV2K8uN734fsBrvLvRNmDXbZc1VfKvCIs4HKh-ygHvc3cwx8A4CEsHOXbJKk4N_L5zfn9QaSb8raZL-uEezcQb0Y2QOyyiygFMsZ90ApPeQyL8dejFba20YsmvTHzatS1FwFzkvUe7Ing4XBuW2ZT1t2WCuCqJ7cgw5MNIyUXihHuu4ATIwbcaKxWr3cJoXHGkMxAGDq2UGrxlJUH23GXsUBDJWUFj4VNNNTN7DCl2cVR9UngYJ0bGzjPaJ9K5TgU5wz0cyz3Jwc1fKRLUmIBeGjKkGHyYgogqq5TF7mLE_q5qNufQ53miDS4Oo3apA_NeQzUqrfcGCTV_WpvEu365LHT6_&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 137,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfbgI1I6qabxR0hp0gNr62v-izuy0SiueSbs1M75YICk2kLl8w9uRVgcrQeruQzSU44&_ft_=encrypted_tracking_data.0AY944j8oZW7IqJXnDgjp4w34qumOdMLyQXQfdeJA9SvDpDNPnSkOn22sWLMasowYrCPQt7r4IWSm3uLaUYKG08nYehJiqdv6OMfUrihh3ROdMCrKm7aPbsd_QNfF_33ENgvQp13QYzrW6Wtv87vnRwyeu22FochvHs1BK1g31HfCdIavJNXGZFO8dfl9mlTQzbQcCKwoJ2RINf37-Y0u6cGZR5xRpIawj70326_Iv0IkTe190WvnSEvmC3CAC1Py36UVpxloGtCPp6tVc6cpvPa8AfpVh9vAYRTJw45aoCZB8ZtK23mAO7bzS1hveowWW2BLuLClVVo94VVZQ_XZ9J_B4ULQSH7XMHzp1YA_xoZLL7ID3CmudMcYzUFjy-WGE6BwoLoVHRtGx3Z9U9UAmOlcM6EXCcCcKEel5zBTe1EywG8OfiHwneZmbfYf56WCOQV2K8uN734fsBrvLvRNmDXbZc1VfKvCIs4HKh-ygHvc3cwx8A4CEsHOXbJKk4N_L5zfn9QaSb8raZL-uEezcQb0Y2QOyyiygFMsZ90ApPeQyL8dejFba20YsmvTHzatS1FwFzkvUe7Ing4XBuW2ZT1t2WCuCqJ7cgw5MNIyUXihHuu4ATIwbcaKxWr3cJoXHGkMxAGDq2UGrxlJUH23GXsUBDJWUFj4VNNNTN7DCl2cVR9UngYJ0bGzjPaJ9K5TgU5wz0cyz3Jwc1fKRLUmIBeGjKkGHyYgogqq5TF7mLE_q5qNufQ53miDS4Oo3apA_NeQzUqrfcGCTV_WpvEu365LHT6_&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 96,
+  'post_text': 'Hoi An with my friend\n📸 Phương Thanh',
+  'post_time': datetime.datetime(2022, 4, 22, 19, 37),
+  'post_url': 'https://facebook.com/phuongthanh.huynh2910?eav=AfZVDFzSThSGG-rCKIWluI4YgRFaDmCaunIXp09FEfK2xXAdNsklnydl_Y-yIeDixaw&_ft_=encrypted_tracking_data.0AY8Zb002_wBgKpTrPHZcyr9X5HkfDUPvfHrvLvLik_EINgkSm1Vj6yRbkyddaoDhFS9MV2tIcaFkpF-3NV2tslL832mSNyWY4ICGvf1pJ2x2LwZuUryst03Ar9xBrokiFJHHdr7v6X0RX30mHlVgE4sXzpuYmAm66wWCjMqod4oUSxajtWGhFtuzai4gYjP5KHp4IwUD1eHGzfcAvOOnCSuz836OntuxmyOfreKQd_xXQxaPbmXeA2j7eYV7EYSdZxyL-Ij42glHqTENqhJR8ZEf82nEpe6mvyoQRPJZpkSmb3yAc5BzAwERisKoPFGGAsWm_Je9Kn_ZB08CM1LfdvKGbuDt3_9UKC-6xK6c5TJhjj5I2q5b63hMDYYPdafpjR9HPlHz7iWCOj9bZMp6YrrG4KlYX42zzc-0mzia1CELyXyn0e_lNLj972Nk_xBN1oiFt9Fl38-xBLzj_7bk5A_--XxCvQdWVxQji-9rpXwFA376DbcwuxtixiKqocj9JtOL5K5jbOVeBEw27TAyXvDdDyhhb9dzypjEbLgnQWwRw4drR9f9Vy_hKeC3ruISSOBVuJtcKXbEf1nQv7jHnhMScdJQ8xk9Ua1ykL6NM4PF3lMlirv_87BOTIHJYqhe8KOMexwkD5d60yasUE6UsvmtcWIF_zguaBohV0rPadtoEAl0W57hvWPCkoTszpia6YN03lDe6wr0J6tk3OJz6oT7NHC4xjgIzR_mvqlArqVqUm5DLMJ0Q5pM54Q47hRBzDvw6VAyhYfc46GKWGdB7vjdrYaOkwioeG8xVGgZji89O9RRl2Y3G1ZCWOSap-p4m8fPi4iEb8tV75Cx3JnZ14Iqix52j8lxl4ST-w&__tn__=%2As-R&paipv=0',
+  'react_counter': 408,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/chinh1108?eav=AfapFEKVrlW8fuFweYkA3f3Mj24FW5h4r2PT_9Xc5aKam5ZTubOWvIg91Jx41CKVkC4&_ft_=encrypted_tracking_data.0AY8Zb002_wBgKpTrPHZcyr9X5HkfDUPvfHrvLvLik_EINgkSm1Vj6yRbkyddaoDhFS9MV2tIcaFkpF-3NV2tslL832mSNyWY4ICGvf1pJ2x2LwZuUryst03Ar9xBrokiFJHHdr7v6X0RX30mHlVgE4sXzpuYmAm66wWCjMqod4oUSxajtWGhFtuzai4gYjP5KHp4IwUD1eHGzfcAvOOnCSuz836OntuxmyOfreKQd_xXQxaPbmXeA2j7eYV7EYSdZxyL-Ij42glHqTENqhJR8ZEf82nEpe6mvyoQRPJZpkSmb3yAc5BzAwERisKoPFGGAsWm_Je9Kn_ZB08CM1LfdvKGbuDt3_9UKC-6xK6c5TJhjj5I2q5b63hMDYYPdafpjR9HPlHz7iWCOj9bZMp6YrrG4KlYX42zzc-0mzia1CELyXyn0e_lNLj972Nk_xBN1oiFt9Fl38-xBLzj_7bk5A_--XxCvQdWVxQji-9rpXwFA376DbcwuxtixiKqocj9JtOL5K5jbOVeBEw27TAyXvDdDyhhb9dzypjEbLgnQWwRw4drR9f9Vy_hKeC3ruISSOBVuJtcKXbEf1nQv7jHnhMScdJQ8xk9Ua1ykL6NM4PF3lMlirv_87BOTIHJYqhe8KOMexwkD5d60yasUE6UsvmtcWIF_zguaBohV0rPadtoEAl0W57hvWPCkoTszpia6YN03lDe6wr0J6tk3OJz6oT7NHC4xjgIzR_mvqlArqVqUm5DLMJ0Q5pM54Q47hRBzDvw6VAyhYfc46GKWGdB7vjdrYaOkwioeG8xVGgZji89O9RRl2Y3G1ZCWOSap-p4m8fPi4iEb8tV75Cx3JnZ14Iqix52j8lxl4ST-w&__tn__=C-R&paipv=0',
+  'username': 'Nguyễn Đức Chinh'},
+ {'comment_counter': 76,
+  'post_text': 'Cày view vì bạn Nhật cute và bạn Chinh đẹp trai nhaaaaaa '
+               '=))))))\n'
+               '(Like share cmt video thì càng perfect hơn :>)\n'
+               'Quay phim: Tuấn Kiệt\n'
+               'Lời thoại: Đình Dương\n'
+               'P/s: Để có trải nghiệm tuyệt vời nhất vui lòng tắt volume và '
+               'hạ độ sáng màn hình về 0% :3',
+  'post_time': datetime.datetime(2021, 4, 12, 17, 20),
+  'post_url': 'https://facebook.com/chinh1108?eav=AfZ-XR17ZzlJk_IISN3p-5H-YDpK6X1Tuw6ja2fv5I752iB6yFOygDa1XytfTyZQGFo&_ft_=encrypted_tracking_data.0AY-yhKh_I9cXvS5nWUM20KRnGoTTLcs8bsUn1_tef3pvQy_6C3yFMFwxiR3MerEAO2Vh-nMQ2UDdAsX8nHHXdaApz8lU5P_tLmHQD793rUD1O0NLxxmWDS8jOUhC8Xvt2VKPD5XGShiFkC7vtLBUjbJTn-rdrVutacctzGYc-zze4nZWZqS41NPYfLd6_lo2eboZev-IoMwtc8joklWPr3ZrVIbma7pFot7Gix2HJZRjskaWuKeD8gQgsId3lZuRMV69XfGbUN7aHSJh1pvt_7TeexbdbCXjhNM4O3TbhQ1b00FzYfjl1owB5pSo-10RvSWut4oEMFKjXbHAunm-G9AJX0wkjpFjGmRHRbzk22b3RNSLJCOKoBGuCPxIhZQB1cnsyl2Uz6jIyn8PmTqyweQ9RAUMHz8BQ2eWTX7GkViviYNSGDb_aOnFrSp7Hrt2W9YAlZ9hNwLg3f-ALfm1YyIBzfnWtcHWfuG5LCy6zOE4IlCf9ZQ-kfz_DhQKypxS-Xlc3m5jWWdNWwL43S0dSIUkLi0oAiXdh-8Q11XstxHoOlF7bN7qjD7tzCgH7CjYJPYD55Qxtu0eBzmLPaQd4boVJYarmjxj_I1vN9VNNvbfBPCqwuWHdXVY4SCFq_dRMOmJoVENpLnVk9vl7JEw8ItUOEargOMRGf3FbkdNJd_7o2F0wwtMegkEXEMtvN1uFW2s-wTzuqZsp211hK3gJh6LeMOWQcmRzL_spswV5xwk6TKhSQ&__tn__=%2As-R&paipv=0',
+  'react_counter': 94,
+  'share_counter': 2,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfZj2KJSIhlMXOewFAXqXq3-FOGpJqbwywJmgdDq1ESZHRKSGdqTGDOmMVhw5VMVxD8&_ft_=encrypted_tracking_data.0AY-yhKh_I9cXvS5nWUM20KRnGoTTLcs8bsUn1_tef3pvQy_6C3yFMFwxiR3MerEAO2Vh-nMQ2UDdAsX8nHHXdaApz8lU5P_tLmHQD793rUD1O0NLxxmWDS8jOUhC8Xvt2VKPD5XGShiFkC7vtLBUjbJTn-rdrVutacctzGYc-zze4nZWZqS41NPYfLd6_lo2eboZev-IoMwtc8joklWPr3ZrVIbma7pFot7Gix2HJZRjskaWuKeD8gQgsId3lZuRMV69XfGbUN7aHSJh1pvt_7TeexbdbCXjhNM4O3TbhQ1b00FzYfjl1owB5pSo-10RvSWut4oEMFKjXbHAunm-G9AJX0wkjpFjGmRHRbzk22b3RNSLJCOKoBGuCPxIhZQB1cnsyl2Uz6jIyn8PmTqyweQ9RAUMHz8BQ2eWTX7GkViviYNSGDb_aOnFrSp7Hrt2W9YAlZ9hNwLg3f-ALfm1YyIBzfnWtcHWfuG5LCy6zOE4IlCf9ZQ-kfz_DhQKypxS-Xlc3m5jWWdNWwL43S0dSIUkLi0oAiXdh-8Q11XstxHoOlF7bN7qjD7tzCgH7CjYJPYD55Qxtu0eBzmLPaQd4boVJYarmjxj_I1vN9VNNvbfBPCqwuWHdXVY4SCFq_dRMOmJoVENpLnVk9vl7JEw8ItUOEargOMRGf3FbkdNJd_7o2F0wwtMegkEXEMtvN1uFW2s-wTzuqZsp211hK3gJh6LeMOWQcmRzL_spswV5xwk6TKhSQ&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 72,
+  'post_text': 'Pùn =(((((( Tổn thưn =((((((',
+  'post_time': datetime.datetime(2021, 7, 16, 14, 36),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid0HNeGpnGRQDLkrLS3oMgvBPVt3UoVNckqgP86PfBCXA7wktnsF56w3W9ozL6E5tXFl&id=100007582690558&eav=AfYXfSytZ3VvzN-xUMsTHfL1TU9JW-NH4-24zZ9WfpcySZFX1q4ugi_s5obVdoI35XE&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY89ZWqxrlcrJK7p-cS4So5mrZOOHkRYL_GMuUe7HGLQBljzpPD9mXDCT3PnUlj_xK05H9RF-hqQqWh-O-KeW697wMUwRWHn2W-mw0Hvtai6lRM6yogGMQnoNRvpSz4QftJ3NmP0HbzSL_uoxQEpMnZEzV61ZaXLvSLEa-UG4Ggz7kwn1_vdFpac8nUq_FF29mINKMD0dS9-3KPXpn5365Y9dHQ-lQq9cqVEYgjpNsrgN9WvKUw08ybYFj72praxMlgqV6cfiRGXUz6rD5kQyiPtDQY3u6ap0TJz8jU2zG_uY6dEoh-VQge3W8Am66yYq5nzpcrM4mMlaReSbVsIyCiivM75AXQjWDtJ1hWlzVSU-3L9i12FCtek6eTD4CNTffEDlEKrcPkUCRIGJxMucgmgjpOreJrA2Neq2kztluAnoEe0mkanTX8xJKhIhn7nh9Wy9wX7hYwGobBOliHM4Nl95OAj_3uByn-MeqQxQhGapfOxfuIPpqHtvA1dLbeHBmBan1R5mjXD6zkE1TAck78scKUXh_MgEApH0NCkqs2VhqtipOWgDy5Vt9JZmah_x7lv4MtYecI2VxL2w8NL22-1_Ln1ax-S2sag-aVr8tufP6X08G7AXlGmMcJ8OOxLAqoMlRBd_Y-KTGauTSG3oFMg3iQSMWuMK5LfwaqSKlUG_0LTKkzQjWsEAm4AWKWFOQi_5QVULzGGlCVBkJ3DxMYSDP2Yagv7b8gaCnyWhyd0qVM1ygParUfzWpv6N6rME_yxCq_TaM_dWmmU6wWSx6E8LiuNtVv4_FfpVCScaj9z8n3TrC8vJyJN7P6kOPSyRsl--WhpWCeAKwn-CctCyWM6IXGAU_nQd5yDwpbRcBf-UlbkgIPYOKqwkPX6l-nTUdy424HABNn7w2aebR_EpuLHP-5BDyrQTH64so1hxZG7XjCGVUdxSU6HdJSlBLbBqXKdOnODXXz-L_cC6946VoY5LSjG39m5a2ZqzAGy5sqOVCq39VM7c6PVTHA6GgWJGfA9OLTRy_Bv7JKdRh3XmkPygK7BgGV8kS-LQzRuxzbry1HKN4SK9-zmP-yite8j-bn-QIRZVspbMLADj8DyeVdI7dCwAhO8tWzETAWIJzHO6h_jasTxRBvfYDOQk9TQpjoC8kW9K8OLSRiBjLaYyx9_L3eR54wzqrJbDkgxqHZoJ4Ebm6D81u5TqidOtTX-PvxqXPyB5-MdKimCeKfHEsxanZKCRfJKRDimJlPbmY8taeMAsC5fiNI9MSnpl9bK-erPg2gIyZaeSAFvex79Kj5eFbouEwwkcMQ9zTXPFV5BvBVAOuFUPpyW4aiNu1bJ2Y8ZxaSeDKL7dFPXzv1kjd0n3d66hAdpA0z2x35nEGwtXM8RjxmQWUaUxvhh8pjLs8mM3cbkSYRYCQeANQA_2vRXIxS3ZjEQvzv0CjDlqfeLDUCfgSkJLmLrz7JVJg3MvBwBBJ2TemGmEwNB4e8KlPlBQxy4j9yime-xUBBcs-_59Q3zaA6HAPzUj_0LTKFUDZxiiG5Q3C07LrYAEJXsHleLXy5ruvveA9aaiFNhIV8p8i76gMpAOj2QzKP_0Xhs-wyR4ekONCH_JZLBrNDLbL_qmp0fVyQQO7UQV5jLXee5vCSwZYBvNxH0NauK3VZXuiqkdnkBVn1tJmCmtvr6FgGvO9anwEZSICv7g30KP1caKee-nqP7Ks_32Q9CqhFTrZ6pJinEqrtTBYAbk_H_LtzXRF5AipMGsYn-8ROWOqKQxsVPIxqZDHPr4FOyEY5ViGyCRKmr7SGxU0Gmf-1fH4VVycfmK0zdnNTeXaaJMhyG-ZKTHtc0_Wuf3L-gjCUCjyIJNGsbhcryQz7bMBJkIM4P9VgG21_DCe8EaHQyEDxpG0616qBc5ByeYi_zy2Q&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 27,
+  'share_counter': 0,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfYF0W_PErEDoTlzS-KNB1Slq4-YLkxzCBHn-_qWbE6T8Uv-uqCgQ1P2UfweC-fXY2c&_ft_=encrypted_tracking_data.0AY89ZWqxrlcrJK7p-cS4So5mrZOOHkRYL_GMuUe7HGLQBljzpPD9mXDCT3PnUlj_xK05H9RF-hqQqWh-O-KeW697wMUwRWHn2W-mw0Hvtai6lRM6yogGMQnoNRvpSz4QftJ3NmP0HbzSL_uoxQEpMnZEzV61ZaXLvSLEa-UG4Ggz7kwn1_vdFpac8nUq_FF29mINKMD0dS9-3KPXpn5365Y9dHQ-lQq9cqVEYgjpNsrgN9WvKUw08ybYFj72praxMlgqV6cfiRGXUz6rD5kQyiPtDQY3u6ap0TJz8jU2zG_uY6dEoh-VQge3W8Am66yYq5nzpcrM4mMlaReSbVsIyCiivM75AXQjWDtJ1hWlzVSU-3L9i12FCtek6eTD4CNTffEDlEKrcPkUCRIGJxMucgmgjpOreJrA2Neq2kztluAnoEe0mkanTX8xJKhIhn7nh9Wy9wX7hYwGobBOliHM4Nl95OAj_3uByn-MeqQxQhGapfOxfuIPpqHtvA1dLbeHBmBan1R5mjXD6zkE1TAck78scKUXh_MgEApH0NCkqs2VhqtipOWgDy5Vt9JZmah_x7lv4MtYecI2VxL2w8NL22-1_Ln1ax-S2sag-aVr8tufP6X08G7AXlGmMcJ8OOxLAqoMlRBd_Y-KTGauTSG3oFMg3iQSMWuMK5LfwaqSKlUG_0LTKkzQjWsEAm4AWKWFOQi_5QVULzGGlCVBkJ3DxMYSDP2Yagv7b8gaCnyWhyd0qVM1ygParUfzWpv6N6rME_yxCq_TaM_dWmmU6wWSx6E8LiuNtVv4_FfpVCScaj9z8n3TrC8vJyJN7P6kOPSyRsl--WhpWCeAKwn-CctCyWM6IXGAU_nQd5yDwpbRcBf-UlbkgIPYOKqwkPX6l-nTUdy424HABNn7w2aebR_EpuLHP-5BDyrQTH64so1hxZG7XjCGVUdxSU6HdJSlBLbBqXKdOnODXXz-L_cC6946VoY5LSjG39m5a2ZqzAGy5sqOVCq39VM7c6PVTHA6GgWJGfA9OLTRy_Bv7JKdRh3XmkPygK7BgGV8kS-LQzRuxzbry1HKN4SK9-zmP-yite8j-bn-QIRZVspbMLADj8DyeVdI7dCwAhO8tWzETAWIJzHO6h_jasTxRBvfYDOQk9TQpjoC8kW9K8OLSRiBjLaYyx9_L3eR54wzqrJbDkgxqHZoJ4Ebm6D81u5TqidOtTX-PvxqXPyB5-MdKimCeKfHEsxanZKCRfJKRDimJlPbmY8taeMAsC5fiNI9MSnpl9bK-erPg2gIyZaeSAFvex79Kj5eFbouEwwkcMQ9zTXPFV5BvBVAOuFUPpyW4aiNu1bJ2Y8ZxaSeDKL7dFPXzv1kjd0n3d66hAdpA0z2x35nEGwtXM8RjxmQWUaUxvhh8pjLs8mM3cbkSYRYCQeANQA_2vRXIxS3ZjEQvzv0CjDlqfeLDUCfgSkJLmLrz7JVJg3MvBwBBJ2TemGmEwNB4e8KlPlBQxy4j9yime-xUBBcs-_59Q3zaA6HAPzUj_0LTKFUDZxiiG5Q3C07LrYAEJXsHleLXy5ruvveA9aaiFNhIV8p8i76gMpAOj2QzKP_0Xhs-wyR4ekONCH_JZLBrNDLbL_qmp0fVyQQO7UQV5jLXee5vCSwZYBvNxH0NauK3VZXuiqkdnkBVn1tJmCmtvr6FgGvO9anwEZSICv7g30KP1caKee-nqP7Ks_32Q9CqhFTrZ6pJinEqrtTBYAbk_H_LtzXRF5AipMGsYn-8ROWOqKQxsVPIxqZDHPr4FOyEY5ViGyCRKmr7SGxU0Gmf-1fH4VVycfmK0zdnNTeXaaJMhyG-ZKTHtc0_Wuf3L-gjCUCjyIJNGsbhcryQz7bMBJkIM4P9VgG21_DCe8EaHQyEDxpG0616qBc5ByeYi_zy2Q&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'}]
+
+Share ranking:
+[{'comment_counter': 76,
+  'post_text': 'Cày view vì bạn Nhật cute và bạn Chinh đẹp trai nhaaaaaa '
+               '=))))))\n'
+               '(Like share cmt video thì càng perfect hơn :>)\n'
+               'Quay phim: Tuấn Kiệt\n'
+               'Lời thoại: Đình Dương\n'
+               'P/s: Để có trải nghiệm tuyệt vời nhất vui lòng tắt volume và '
+               'hạ độ sáng màn hình về 0% :3',
+  'post_time': datetime.datetime(2021, 4, 12, 17, 20),
+  'post_url': 'https://facebook.com/chinh1108?eav=AfZ-XR17ZzlJk_IISN3p-5H-YDpK6X1Tuw6ja2fv5I752iB6yFOygDa1XytfTyZQGFo&_ft_=encrypted_tracking_data.0AY-yhKh_I9cXvS5nWUM20KRnGoTTLcs8bsUn1_tef3pvQy_6C3yFMFwxiR3MerEAO2Vh-nMQ2UDdAsX8nHHXdaApz8lU5P_tLmHQD793rUD1O0NLxxmWDS8jOUhC8Xvt2VKPD5XGShiFkC7vtLBUjbJTn-rdrVutacctzGYc-zze4nZWZqS41NPYfLd6_lo2eboZev-IoMwtc8joklWPr3ZrVIbma7pFot7Gix2HJZRjskaWuKeD8gQgsId3lZuRMV69XfGbUN7aHSJh1pvt_7TeexbdbCXjhNM4O3TbhQ1b00FzYfjl1owB5pSo-10RvSWut4oEMFKjXbHAunm-G9AJX0wkjpFjGmRHRbzk22b3RNSLJCOKoBGuCPxIhZQB1cnsyl2Uz6jIyn8PmTqyweQ9RAUMHz8BQ2eWTX7GkViviYNSGDb_aOnFrSp7Hrt2W9YAlZ9hNwLg3f-ALfm1YyIBzfnWtcHWfuG5LCy6zOE4IlCf9ZQ-kfz_DhQKypxS-Xlc3m5jWWdNWwL43S0dSIUkLi0oAiXdh-8Q11XstxHoOlF7bN7qjD7tzCgH7CjYJPYD55Qxtu0eBzmLPaQd4boVJYarmjxj_I1vN9VNNvbfBPCqwuWHdXVY4SCFq_dRMOmJoVENpLnVk9vl7JEw8ItUOEargOMRGf3FbkdNJd_7o2F0wwtMegkEXEMtvN1uFW2s-wTzuqZsp211hK3gJh6LeMOWQcmRzL_spswV5xwk6TKhSQ&__tn__=%2As-R&paipv=0',
+  'react_counter': 94,
+  'share_counter': 2,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfZj2KJSIhlMXOewFAXqXq3-FOGpJqbwywJmgdDq1ESZHRKSGdqTGDOmMVhw5VMVxD8&_ft_=encrypted_tracking_data.0AY-yhKh_I9cXvS5nWUM20KRnGoTTLcs8bsUn1_tef3pvQy_6C3yFMFwxiR3MerEAO2Vh-nMQ2UDdAsX8nHHXdaApz8lU5P_tLmHQD793rUD1O0NLxxmWDS8jOUhC8Xvt2VKPD5XGShiFkC7vtLBUjbJTn-rdrVutacctzGYc-zze4nZWZqS41NPYfLd6_lo2eboZev-IoMwtc8joklWPr3ZrVIbma7pFot7Gix2HJZRjskaWuKeD8gQgsId3lZuRMV69XfGbUN7aHSJh1pvt_7TeexbdbCXjhNM4O3TbhQ1b00FzYfjl1owB5pSo-10RvSWut4oEMFKjXbHAunm-G9AJX0wkjpFjGmRHRbzk22b3RNSLJCOKoBGuCPxIhZQB1cnsyl2Uz6jIyn8PmTqyweQ9RAUMHz8BQ2eWTX7GkViviYNSGDb_aOnFrSp7Hrt2W9YAlZ9hNwLg3f-ALfm1YyIBzfnWtcHWfuG5LCy6zOE4IlCf9ZQ-kfz_DhQKypxS-Xlc3m5jWWdNWwL43S0dSIUkLi0oAiXdh-8Q11XstxHoOlF7bN7qjD7tzCgH7CjYJPYD55Qxtu0eBzmLPaQd4boVJYarmjxj_I1vN9VNNvbfBPCqwuWHdXVY4SCFq_dRMOmJoVENpLnVk9vl7JEw8ItUOEargOMRGf3FbkdNJd_7o2F0wwtMegkEXEMtvN1uFW2s-wTzuqZsp211hK3gJh6LeMOWQcmRzL_spswV5xwk6TKhSQ&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 42,
+  'post_text': 'Tạm biệt Bách Khoa, khóc xong rồi ở nhà ăn Tết tiếp chứ biết '
+               'sao giờ =)))))) Lại phải làm quen mấy bạn trong lớp một lần '
+               'nữa =))))',
+  'post_time': datetime.datetime(2021, 2, 17, 16, 16),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid0fsA8ReaLmrs3bNG7YqorXSsW2q87HidJ2hHC5VFzPDS6dXibnVpEWQT31ind5LLsl&id=100007582690558&eav=AfbI2TPTuEx0oSnYaOrLL0XE50zOn4nls6aepDZUSeucL4qRhknflqOBcQILMi41G1A&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY8-h3evD2qTJTr6k9kp8Wfz1DvllqGtVc4BtHA2_K5htFp3js93GLbEbvZtZX9MzVtKdPolDb_-p5Rzj8LBY-jG-7anKIauFZFcDv95ZH1ESoVa9AAd4T8aFv6hwwyeIAQ7NyyvF5yu7d2t_KNdPYu4jG4RBaQSz-yUOUhbCwOc3UYG8xA0fz634Q6jyOPT_2Z9NwZyYAL25oOqr00SlUfSzkr4_79FLsH964xcIhOlFel4Bk7pMAxZ8RR7146EHmRTZHI2kHETbw2IL-p3qqKwNIqKRfcPp9DqMExaXOQ2wrbIsuRsTA-PfSDmy1Wk8X61p7gHMNxxLxXRJ9VfAYOW2XTsKWQfaSSclKJ3oSLGwt8G6aD9iPbAhy1e_uc2tZy3BWWpcNlYF9I1iwXKEom-ZEKT6gN1CHmYkihwbf1hncUPXVsIdxUMYzYBuAGcSkUQd9jcfZi9kcfZ5sHuE8P_sTfeKMlgJB338gF23W7aR8jeZ8TK28hD_3cPVr63-pMmNHg7pbgUIn6csSZFXuYShXqJV2h0VGkoCpoAPokvpO-jP5kt8KCyl2ufVHonKq7F7-K88qzhjYAnR8cIcI_knqyvUvexc5DUcXvFzWDQzl5xnHg1TjRRfsRLC1lgvbTKmMQo5e4DiN0RlDoCsy-RtBIrH99b7O6NfKt0jILal4GP7mJ46yCVPr01wzL748o-ZhIhUy5yFP7msQz03mbF0TvD9YVNIOA_dRTv5lzbyhxjPbAvUbtYXHxvGv6AlH0uR-JKd61dkSmHvxFnCa72h_-Rkqt142JIlixGgFblU0sJZ_rVvUvuyp2THQmOI1CVSPxasTIw1HhkmhejS4JtGBSdReD27gbY2bZFDjtvT2UuOFc9D4kpEL6BIQCA_sczJvpyeUm8H0oWpObfMDuJ4WmEcsjbYc12Fbx2prcMhfefVkNVUlLsMLdwWorwmWD6BDd19lvrXu6YzWBrbfJtO9eMzdpwI9l2h3i3ILhf8rJEEecoKuSNAl0_9waYLs-KBl0EADJhJKZD6erNYg5M33FdI1N-gBWfUvlKRfLcdQ_TVJ61UkfueBzR_E780qUukgfDOl59qug_WEC4kZW6saqlir_pj_T6BJEtXKqSSqzVl1W_nuZ8l0YzCUfLwC7zP1cGOahxxsMHszkT3Gpzktdnd5fs0BYjmGrvQFolTnp3kjRijK7_Z_yGk7CsyJB1YcUVisyYAI7jozmCKh1ULdG-OugV_x5F6QYWYILZxjUm2UY7bzxvL9XUGfdZWkqrrLqQmRdgGAAZbIabsZXLdQnZHFfVxgjwghzLP5GIbvPfUvzyrydfVi0JLp2NnTocOUuDIJQUX_XUOulkzaumMeN8E45aK2EhRhyNpn_fJCGruuPtfO6IyugDaWmD4ZelYYDehoPMtQyP03LKcbj-VQsOMdUn75jGnDHy_GFLYt4H08QIub4uSqboyKPtBCLjbxsR5g0exKmXgon1naZt0VMXJpvwKTii-P2iSU74-kOqzO7nRQKDoh7PzR_4hCDBnWmk2GhRCu4w0xh20kkW9XLf8F90XSF2FSbt3TMtEw7QI29flrZpHjsU2LwtueowSV29hCRXCjJWTA_3loArN2lZsHjsSbU3FDdjvUcprqW0yw9GYfJvlCs1jRNT_Kr8p4qKJOgVPYpfb-kugNH9XqozqAdAa8dksetNf1G4tWSKjViFFvYgkQ3Ze3vOL71I01_hIXDwIoQAjAmdt4-V4JHcmTtRBIW_pweq5L1YYwHaoV95Kmh8NNzKlTBm008-v9qrenceB4FYfuO8Vnv_6EQfAQHBw2FD3u2qpUL3yYubmbJ2vjC6Z8uvX_kuKvKU1JGFvmxHi4Ie3HjFu_2oCm52edm0_-9Ye_m7hbkEmROQoa9gTfEU&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 23,
+  'share_counter': 2,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfbgI1I6qabxR0hp0gNr62v-izuy0SiueSbs1M75YICk2kLl8w9uRVgcrQeruQzSU44&_ft_=encrypted_tracking_data.0AY8-h3evD2qTJTr6k9kp8Wfz1DvllqGtVc4BtHA2_K5htFp3js93GLbEbvZtZX9MzVtKdPolDb_-p5Rzj8LBY-jG-7anKIauFZFcDv95ZH1ESoVa9AAd4T8aFv6hwwyeIAQ7NyyvF5yu7d2t_KNdPYu4jG4RBaQSz-yUOUhbCwOc3UYG8xA0fz634Q6jyOPT_2Z9NwZyYAL25oOqr00SlUfSzkr4_79FLsH964xcIhOlFel4Bk7pMAxZ8RR7146EHmRTZHI2kHETbw2IL-p3qqKwNIqKRfcPp9DqMExaXOQ2wrbIsuRsTA-PfSDmy1Wk8X61p7gHMNxxLxXRJ9VfAYOW2XTsKWQfaSSclKJ3oSLGwt8G6aD9iPbAhy1e_uc2tZy3BWWpcNlYF9I1iwXKEom-ZEKT6gN1CHmYkihwbf1hncUPXVsIdxUMYzYBuAGcSkUQd9jcfZi9kcfZ5sHuE8P_sTfeKMlgJB338gF23W7aR8jeZ8TK28hD_3cPVr63-pMmNHg7pbgUIn6csSZFXuYShXqJV2h0VGkoCpoAPokvpO-jP5kt8KCyl2ufVHonKq7F7-K88qzhjYAnR8cIcI_knqyvUvexc5DUcXvFzWDQzl5xnHg1TjRRfsRLC1lgvbTKmMQo5e4DiN0RlDoCsy-RtBIrH99b7O6NfKt0jILal4GP7mJ46yCVPr01wzL748o-ZhIhUy5yFP7msQz03mbF0TvD9YVNIOA_dRTv5lzbyhxjPbAvUbtYXHxvGv6AlH0uR-JKd61dkSmHvxFnCa72h_-Rkqt142JIlixGgFblU0sJZ_rVvUvuyp2THQmOI1CVSPxasTIw1HhkmhejS4JtGBSdReD27gbY2bZFDjtvT2UuOFc9D4kpEL6BIQCA_sczJvpyeUm8H0oWpObfMDuJ4WmEcsjbYc12Fbx2prcMhfefVkNVUlLsMLdwWorwmWD6BDd19lvrXu6YzWBrbfJtO9eMzdpwI9l2h3i3ILhf8rJEEecoKuSNAl0_9waYLs-KBl0EADJhJKZD6erNYg5M33FdI1N-gBWfUvlKRfLcdQ_TVJ61UkfueBzR_E780qUukgfDOl59qug_WEC4kZW6saqlir_pj_T6BJEtXKqSSqzVl1W_nuZ8l0YzCUfLwC7zP1cGOahxxsMHszkT3Gpzktdnd5fs0BYjmGrvQFolTnp3kjRijK7_Z_yGk7CsyJB1YcUVisyYAI7jozmCKh1ULdG-OugV_x5F6QYWYILZxjUm2UY7bzxvL9XUGfdZWkqrrLqQmRdgGAAZbIabsZXLdQnZHFfVxgjwghzLP5GIbvPfUvzyrydfVi0JLp2NnTocOUuDIJQUX_XUOulkzaumMeN8E45aK2EhRhyNpn_fJCGruuPtfO6IyugDaWmD4ZelYYDehoPMtQyP03LKcbj-VQsOMdUn75jGnDHy_GFLYt4H08QIub4uSqboyKPtBCLjbxsR5g0exKmXgon1naZt0VMXJpvwKTii-P2iSU74-kOqzO7nRQKDoh7PzR_4hCDBnWmk2GhRCu4w0xh20kkW9XLf8F90XSF2FSbt3TMtEw7QI29flrZpHjsU2LwtueowSV29hCRXCjJWTA_3loArN2lZsHjsSbU3FDdjvUcprqW0yw9GYfJvlCs1jRNT_Kr8p4qKJOgVPYpfb-kugNH9XqozqAdAa8dksetNf1G4tWSKjViFFvYgkQ3Ze3vOL71I01_hIXDwIoQAjAmdt4-V4JHcmTtRBIW_pweq5L1YYwHaoV95Kmh8NNzKlTBm008-v9qrenceB4FYfuO8Vnv_6EQfAQHBw2FD3u2qpUL3yYubmbJ2vjC6Z8uvX_kuKvKU1JGFvmxHi4Ie3HjFu_2oCm52edm0_-9Ye_m7hbkEmROQoa9gTfEU&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 2,
+  'post_text': 'Mình biết cái bạn iu của mình cũng sẽ vậy mà :3',
+  'post_time': datetime.datetime(2021, 5, 14, 14, 9),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid0pRJLWNLUMeZ3Qpmnt5mkNgnAVKTyMnsX3DLNC3cFU8uxqXpBYuH18C1LJKEdSudrl&id=100007582690558&eav=AfZg5QM7AERPuZgeZRjLkg-TWhfuxsnXGUbRCF3B63V4deKEG_stIpKU_X1DG79YnxU&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY8gR-qI0EGTFd9UwTgxPJKlj4Y4qOXtw75CgaH1gwqBhY1nqjArObCpx3eCT1cMt26RDe_v_xhGza4eDsoAaSIan7rOb9vSow-pZGCX53MiC18JEvcV6nh2KU4SNDTE5YQHtySrxLc_UzxZbqNKb1yH6-iuG-UPnhCY_WnHccqp5k_HqHqexfDm2j860Fw0JU7RSlaEU4Up9ngGTgojNU6oJetD95X5u9IIkJSMzvPrEisDZvJQ5wyvHwbB6x1L8d4YXMZ488X-iRDgx-OQoN0KnyTWx-KKf3g2FPDWvXCEYSb7a1J7qwZopTvMTTMr-YzpsXXQnPI80tp5rlI-3OnjW9vSz0OtB14uCRkhuMjIRgE1tyjHFdr03qG7GvgeMFbMR5m1E_mZayUIjucdjJScWUE3t3epnrxWGZNqMdsZPHlieNOvlLUeMsdk5E_0ZHbKyEE_CNwjDnqVY20skg6C_QY5T60lBIvYJqgy3SqtRR5pBAosO7EmUxA-QZCynGq8gci_OXWNelaPGGyIoPhYZ3Cgfwz0cdrQDwRKbZHGSDqF93S8Em3vQi3Ml_2n8IP8Mc0SUAZo8Rmlg9hBhhWDNoYd3SQFpKADS2EByIXlWZ-mzI85dPJoV1ClaW67IWc2usxqXsZAEWZW5LBDMNi9Nk1Hqb0wfBeVM1WlgWUCiMwVHrggHbACbhovCxGXM6IWPI-5P3aAJIJfmJWfTzJPVdtQJcN0dXof9QsfNyNXaOd2gZeSP9rbYT8iVgytzWFRFJpfEYBd3yyG-QzhHIHMXaIkZmbvOd7pI9dgw34xD5iuTpNp9aTJRh-Ed3O6RP0RW7te_7SdSL_Q18KtPvnGTo8gpD3QzVyGKXYHuByuOTcGU550Dj4WpMf_fTsS0ZvSq-Hi8ISSEsINH4uDTswciEcsFveEEh4R9GymBazA8kSoWNgr6OuwmUaakgBl8AAcgm2RHdgn3Tk2L2r4MuoKYK5uCS-cyBUChHqx7WojCQK3ymtF99h5uPOpK3TAC0V-Zsm9bqcTJx0ClpYpRfYhsvZDov2_91y-R9eBTU_DRT7Z1nMjWVKQPC4QgUDrG7Pa_ZjEFHf9MMs2lAProdjpksp17lunI1__FwixH4teqSBC-0lOXLbCyAQ6u1R0lVqKeUUqSRUX7RRJAkju5t8xP1d3zWb0wq7Kh6UHFGwWoJ9atva914RjqgKQ7ztGRTaKLi-0KnZRMVrCbtP2HM7wiPw2HZ7NBz7fv6H7F2pO0WUwWCjAkIqq3aE2KK3wFEsBKvQkR2Z-ppwYjTRdjWHgfdvbf7joIFBBUA61s84eSzLgBNGDkTP82sXO4FcFofpAwyIxAgFfnjtVnkrci-QvAZ7HbfFJGIigjTzZT1ZvFOqbYkrt12zVlAg2YlD1p49izDfkAIDbTCDztGmxhLt7UU77GbhK5CGFWMVJR5cHAdfbb0Hqh5dqfY4OqN7U5-_sAOp79HNCam0gDOKZoYVQttP3TKZ4pJGp9SyZT-5pOY376I7haK8OSh-RYa_e1c-GfR_haGZLcG_MpbyPGLxnIVOhUZx-ZuHqVWSNN0fe2MNULsnrKqImWmMZcUNu6wiejKi6O5jw9H1e47VBWct6WxPUuK4-35_6BziYwANyWj4UyRgbwk7wNT6YJU9hiixd0EWQpS-oJ1Uin6W_VWT2eClR2WTbzeEhXYz4vWeFWy8luonqoSSSLuzs_1HMqsJFCeCSjOdU1cvPzc0e5NEtzvFcb7eZJJ4r3Ci5cu1Ehn1auZVSXm-3vCs05yXbIHJKwAoxH0MgsypG4V2zS0y8PxKJMz3vFZvCJa-e1xscWOyNQQVrFe2IU0nFlFATUEqw4yxf-mWDVk5-vsZq1KEhhrwxZr5eTH0jeIfLnTZouqvGBTG-bm8u5_opwUgQe_M&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 8,
+  'share_counter': 1,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=AfZj2KJSIhlMXOewFAXqXq3-FOGpJqbwywJmgdDq1ESZHRKSGdqTGDOmMVhw5VMVxD8&_ft_=encrypted_tracking_data.0AY8gR-qI0EGTFd9UwTgxPJKlj4Y4qOXtw75CgaH1gwqBhY1nqjArObCpx3eCT1cMt26RDe_v_xhGza4eDsoAaSIan7rOb9vSow-pZGCX53MiC18JEvcV6nh2KU4SNDTE5YQHtySrxLc_UzxZbqNKb1yH6-iuG-UPnhCY_WnHccqp5k_HqHqexfDm2j860Fw0JU7RSlaEU4Up9ngGTgojNU6oJetD95X5u9IIkJSMzvPrEisDZvJQ5wyvHwbB6x1L8d4YXMZ488X-iRDgx-OQoN0KnyTWx-KKf3g2FPDWvXCEYSb7a1J7qwZopTvMTTMr-YzpsXXQnPI80tp5rlI-3OnjW9vSz0OtB14uCRkhuMjIRgE1tyjHFdr03qG7GvgeMFbMR5m1E_mZayUIjucdjJScWUE3t3epnrxWGZNqMdsZPHlieNOvlLUeMsdk5E_0ZHbKyEE_CNwjDnqVY20skg6C_QY5T60lBIvYJqgy3SqtRR5pBAosO7EmUxA-QZCynGq8gci_OXWNelaPGGyIoPhYZ3Cgfwz0cdrQDwRKbZHGSDqF93S8Em3vQi3Ml_2n8IP8Mc0SUAZo8Rmlg9hBhhWDNoYd3SQFpKADS2EByIXlWZ-mzI85dPJoV1ClaW67IWc2usxqXsZAEWZW5LBDMNi9Nk1Hqb0wfBeVM1WlgWUCiMwVHrggHbACbhovCxGXM6IWPI-5P3aAJIJfmJWfTzJPVdtQJcN0dXof9QsfNyNXaOd2gZeSP9rbYT8iVgytzWFRFJpfEYBd3yyG-QzhHIHMXaIkZmbvOd7pI9dgw34xD5iuTpNp9aTJRh-Ed3O6RP0RW7te_7SdSL_Q18KtPvnGTo8gpD3QzVyGKXYHuByuOTcGU550Dj4WpMf_fTsS0ZvSq-Hi8ISSEsINH4uDTswciEcsFveEEh4R9GymBazA8kSoWNgr6OuwmUaakgBl8AAcgm2RHdgn3Tk2L2r4MuoKYK5uCS-cyBUChHqx7WojCQK3ymtF99h5uPOpK3TAC0V-Zsm9bqcTJx0ClpYpRfYhsvZDov2_91y-R9eBTU_DRT7Z1nMjWVKQPC4QgUDrG7Pa_ZjEFHf9MMs2lAProdjpksp17lunI1__FwixH4teqSBC-0lOXLbCyAQ6u1R0lVqKeUUqSRUX7RRJAkju5t8xP1d3zWb0wq7Kh6UHFGwWoJ9atva914RjqgKQ7ztGRTaKLi-0KnZRMVrCbtP2HM7wiPw2HZ7NBz7fv6H7F2pO0WUwWCjAkIqq3aE2KK3wFEsBKvQkR2Z-ppwYjTRdjWHgfdvbf7joIFBBUA61s84eSzLgBNGDkTP82sXO4FcFofpAwyIxAgFfnjtVnkrci-QvAZ7HbfFJGIigjTzZT1ZvFOqbYkrt12zVlAg2YlD1p49izDfkAIDbTCDztGmxhLt7UU77GbhK5CGFWMVJR5cHAdfbb0Hqh5dqfY4OqN7U5-_sAOp79HNCam0gDOKZoYVQttP3TKZ4pJGp9SyZT-5pOY376I7haK8OSh-RYa_e1c-GfR_haGZLcG_MpbyPGLxnIVOhUZx-ZuHqVWSNN0fe2MNULsnrKqImWmMZcUNu6wiejKi6O5jw9H1e47VBWct6WxPUuK4-35_6BziYwANyWj4UyRgbwk7wNT6YJU9hiixd0EWQpS-oJ1Uin6W_VWT2eClR2WTbzeEhXYz4vWeFWy8luonqoSSSLuzs_1HMqsJFCeCSjOdU1cvPzc0e5NEtzvFcb7eZJJ4r3Ci5cu1Ehn1auZVSXm-3vCs05yXbIHJKwAoxH0MgsypG4V2zS0y8PxKJMz3vFZvCJa-e1xscWOyNQQVrFe2IU0nFlFATUEqw4yxf-mWDVk5-vsZq1KEhhrwxZr5eTH0jeIfLnTZouqvGBTG-bm8u5_opwUgQe_M&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'},
+ {'comment_counter': 145,
+  'post_text': 'みなさん、こにちは。\n'
+               'Xin chào mọi người,\n'
+               'Gần đây nhóm tụi mình đang tham gia cuộc thi "Sun* Be the '
+               'change! 2021".\n'
+               'Dưới đây là video dự thi do nhóm tụi mình thực hiện về chủ đề '
+               '"2100年のITニュース - Bản tin IT năm 2100".\n'
+               'RấtXem thêm mong được sự ủng hộ và tương tác của mọi người '
+               'bằng cách coi video.\n'
+               'Cám ơn mọi người rất nhiều😍\u3000ありがとうございました。\n'
+               '\n'
+               '#予選ラウンドSun*BeTheChange!2021\n'
+               '#teamブラックピンク\n'
+               '#2100年のITニュース\n'
+               '\n'
+               'https://www.youtube.com/watch?v=6OmK4KN9AxQ&ab_channel=%E4%BA%88%E9%81%B8%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89Sun%2aBeTheChange%212021',
+  'post_time': datetime.datetime(2021, 4, 12, 22, 4),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid024pkrxn4NPEynBs6GsxKed8QD8EG17qMYWTGik4Hr11eRYVXsdKPU93vbddeay2zYl&id=100006408250439&eav=AfZHFgp6jjBn5UlgA3me3Bx8B_VdpIiQgE6BZJLg7vQUWWr3EWfAmdE8btCXxYxhC2o&paipv=0',
+  'react_counter': 371,
+  'share_counter': 1,
+  'user_url': 'https://facebook.com/chinh1108?eav=AfZ-XR17ZzlJk_IISN3p-5H-YDpK6X1Tuw6ja2fv5I752iB6yFOygDa1XytfTyZQGFo&_ft_=encrypted_tracking_data.0AY8Adih4O_TREWKaoYPq2X6Za8Bx1azfABMtufBxL4T-rRzX83D91F4T8DrIgRqxn6igen1RYVW2KLT2QBkwpKT_D16MFIrw-bDsbt1l3WaIsmThIdu9fHTMNtgRukbTHwqv-4S1Ehzobb88OrFwlbSQ2r-7qjXDpuADtPIu3bi_Lb_NN5ykR35bTsz1cfLANaScUgTqr9vsChSUtstSGwGZ_fy1ZEoW6B4yo96Dqk_8o0u5jHbNtEzyq3P-XecYCi3RmKBAAGD3f0YBsxmpeo2qfIk_MQXiHPr7Cl3bVc1okQuIMGRsvAVHYM0CZnOubmt3FyUmq0cCHc-VQhxZQcw-Ok7wxmzIq8y84R-6mo-d0yS3Kb6KsDkZ1btSfSqf1ep20-1fqeLz_LaiaR2ZDRRTxrBEaN_edO419BEUBbGijmILDA4KBlTEmgyt0PDE_HNhogOFdfwC_N-xtovWPkMMY-e7NdEvC0Gln1YpsYxX10BQ3S-eVFLVWRG1nLK3TzqRmjS5L3ybhMmso5hoPXEMmZCXJAG2pPdLMKXoG6KPGjwD0M2vjDEJ7yoj7nJCnNCfIWRiIQo7I3haFDmF_i2hVWHyLUB2y-UuG2kD8dW4D-xm5J_KdbuPrUOfF55GGSR97hitVPzygxuovDgQPWRlfbaBilNLlkMKEYDNTWLc23kqVhoYTvEidL1mSSas0xdo9DP0qjA32CZyU6jzNAqb9GEu2Y7mxtrTtM7BSDpkRA&__tn__=C-R&paipv=0',
+  'username': 'Nguyễn Đức Chinh'},
+ {'comment_counter': 0,
+  'post_text': '2020 - Một năm KHÔNG THỂ QUÊN với tất cả chúng ta.\n'
+               '\n'
+               'Cùng Nhìn Lại - Và Cùng Cảm Nhận.\n'
+               '——————————\n'
+               'Một sản phẩm của Trung tâm Sản xuất và Phát triển Nội dung số '
+               '- VTV DIGITAL\n'
+               'Đơn vị đồng hành: Tập đoàn Ecopark\n'
+               '\n'
+               '#nhinlai2020 #2020rewind #vtvdigital #VTVdigitalRewind2020',
+  'post_time': datetime.datetime(2020, 12, 24, 14, 54),
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid0BjfihzbBs1dsVS6nruz7qbQooGUTytWtb1ABjKe5EAHwMfwWr6DEmH9LvhLSpPUal&id=100007582690558&eav=AfZXwYL6Ipi-bet4MpZ3wi8ct_S_gv5dsfU8WyUhIRKyIzNTHLNKsN34NrDSAFwTAyA&m_entstream_source=timeline&_ft_=encrypted_tracking_data.0AY9OMt-bkT3rD-S7Ih09nyvnsZFa2-ZjE2USi0XRWIRCeTY7fWskI31rH3xqmz8Vbfpc1oT1w4p5JwsLp4oB9WRKfVXtSK9W2Lfj11bVl73bXWG3OPlVFFpvim_aBD1uzKLHrpX_jF3Xw-njc_u1EQXTqgRuenLaTgdn0fhnYJfRvXQxYWTRZKp87cYEVsbRUkUshr9dKic2vm3y4HuShGaH6HNCfUw2je5Ll6J78OkUR-NLIB4gQJJszZT7j5Cc8SOz-Cu536aMk3_nLQh0sm8WyOSfd8KDAc3EmjrUgvsCNkyIgmZ74KXP6QJF-jD9S7cj1t-F7rJVB4RHVvx0Kc8wfl4gZ93S_Ax9tnAcO1lRn-vCMcfA8EbGSoV-8Puva735C5fLfgFqe1O91lHjMw6Xc9W8MJ68kXghCam4L3hhEslkbIX4B9VFkO8pIIDMHkpU3BPJMDtq3sXECWm3VOL1yhoRoKGqIOGbmlTnOMFnvRHMHiP3O8_7-ARA8-MbmsN0H-wXjTcFivo-mq1mj8CAexigCLPogBXW9PG-e4BRdYcimR-Qusotht9boe756SZGM9bxGk_r22jHe4wFGmGLa7zdriC6VxeMNbW62VRtH3yHVnaOv-0U4Jt7KK4EGtZRU2XKDL2RWlCgKVS1VPgWzhsFvlhJ5_tp28sBv-NrfmLasH55H5BViBM-AGOnemEpHuIUSfFrw3u6RPK-PtfDB7EipD8CuxKKA9XlrAIs_Meq0mDLOD9PMQryPDjBBdi86ed4NGhLLu88SZnSiERY3DuNjPKTNcMycryratM2EAd77UgiuxtyJVxBSDDR_iqekOYVf9-CLcUpbohqJJKEWlzwFGa6aU8Ficv8t1MBlcudBPlI0ZNx5tpoYIUqsGHS1i1RbdleF9LUCvlm7c1F0YjtmmfUf5RcF52eka96pzyIxCOgHOlV08jrj35PUtSVxyDP_FhdXa5czzyUslfqNumEcsF2qcaEdOKxRXIOj4qCoJ8K8P4p1biEUfqh0_dyool0ov68dd9nfkWr_YTVZqxr3hJr0nAk_E74OL27wkQe1IQVXnIFD3eIzuina_iBHdjyVIfSYjQPcIBBHzJVzNVHtrlN7N_5MRO91cF9q7KxbsWufcMM2wmdq9c1t2IC4UXatOpQxmiRvDvmUUnJIS2EbWT6IU-Natb-ymaSwb-tAIWeLXQG75bVLi-sPUB6WZX7jMwaykQSiPIkjLOJLMbF0bar9SioReDv5LB5CTugeZc3Zz0pyPJZY7-ImZfLRCTIhp3bUofe6eKi5xYUuhg0FLyFAS_mgRnrHjfC7L1yRcYGMpfI43Eu2jwzeq6ejsjbH0z_abezyt0qvadkf_TvpCxs0AGW9-WUiP5Jr8qImzApvqQm48SByOykHvTObIJrts1VgpBhNC4ifQhxDbonR-NMimt8McQoZ4qY_CUry_J_hyDbevgkuthq3vxmM2lw2481dL2w6MSF7HimBAU0baboR443MVzSvOpauKhTeRPwU9uPvqpYW_AiC7QpeBb2lt2QxqHgCbNq-IJHwbT8fJIOjm4CbwGgIME8ne95zJJ_NCD11_fza9QYShnPd3AM5q1Oq_iPTglat21KnWVLhhJlsT2iutigpRBDRR7M02KB6fjKBaYh3dsMQLixlBkuGLcCtSqFp8XD57Csn4-NXcH2QWjsyCbUnizc6csC6VWSvpDoag65sGWiMcgip02QfnFnMuf9KkGkvWWVtt1Rt8kkJgIuKwdklkxw7iWT4yjp3wcSO-5-XzdoSA54DbA-VU3lpTNRFOUut_WnZAKm5l5saLEdsbKhVVpdnMOqB1kmR_u-2eoR12JkwQzXg28Yl3DH2_c0Mizy5BT9nw&__tn__=%2As%2As-R&paipv=0',
+  'react_counter': 0,
+  'share_counter': 1,
+  'user_url': 'https://facebook.com/mxnhat1610?eav=Afbo8gyAeqCV1knsHDer8AxinZGtW6vzdIQMYE3J_XaeIFxwJWPk-Y_EKwnxNWeAWXM&_ft_=encrypted_tracking_data.0AY9OMt-bkT3rD-S7Ih09nyvnsZFa2-ZjE2USi0XRWIRCeTY7fWskI31rH3xqmz8Vbfpc1oT1w4p5JwsLp4oB9WRKfVXtSK9W2Lfj11bVl73bXWG3OPlVFFpvim_aBD1uzKLHrpX_jF3Xw-njc_u1EQXTqgRuenLaTgdn0fhnYJfRvXQxYWTRZKp87cYEVsbRUkUshr9dKic2vm3y4HuShGaH6HNCfUw2je5Ll6J78OkUR-NLIB4gQJJszZT7j5Cc8SOz-Cu536aMk3_nLQh0sm8WyOSfd8KDAc3EmjrUgvsCNkyIgmZ74KXP6QJF-jD9S7cj1t-F7rJVB4RHVvx0Kc8wfl4gZ93S_Ax9tnAcO1lRn-vCMcfA8EbGSoV-8Puva735C5fLfgFqe1O91lHjMw6Xc9W8MJ68kXghCam4L3hhEslkbIX4B9VFkO8pIIDMHkpU3BPJMDtq3sXECWm3VOL1yhoRoKGqIOGbmlTnOMFnvRHMHiP3O8_7-ARA8-MbmsN0H-wXjTcFivo-mq1mj8CAexigCLPogBXW9PG-e4BRdYcimR-Qusotht9boe756SZGM9bxGk_r22jHe4wFGmGLa7zdriC6VxeMNbW62VRtH3yHVnaOv-0U4Jt7KK4EGtZRU2XKDL2RWlCgKVS1VPgWzhsFvlhJ5_tp28sBv-NrfmLasH55H5BViBM-AGOnemEpHuIUSfFrw3u6RPK-PtfDB7EipD8CuxKKA9XlrAIs_Meq0mDLOD9PMQryPDjBBdi86ed4NGhLLu88SZnSiERY3DuNjPKTNcMycryratM2EAd77UgiuxtyJVxBSDDR_iqekOYVf9-CLcUpbohqJJKEWlzwFGa6aU8Ficv8t1MBlcudBPlI0ZNx5tpoYIUqsGHS1i1RbdleF9LUCvlm7c1F0YjtmmfUf5RcF52eka96pzyIxCOgHOlV08jrj35PUtSVxyDP_FhdXa5czzyUslfqNumEcsF2qcaEdOKxRXIOj4qCoJ8K8P4p1biEUfqh0_dyool0ov68dd9nfkWr_YTVZqxr3hJr0nAk_E74OL27wkQe1IQVXnIFD3eIzuina_iBHdjyVIfSYjQPcIBBHzJVzNVHtrlN7N_5MRO91cF9q7KxbsWufcMM2wmdq9c1t2IC4UXatOpQxmiRvDvmUUnJIS2EbWT6IU-Natb-ymaSwb-tAIWeLXQG75bVLi-sPUB6WZX7jMwaykQSiPIkjLOJLMbF0bar9SioReDv5LB5CTugeZc3Zz0pyPJZY7-ImZfLRCTIhp3bUofe6eKi5xYUuhg0FLyFAS_mgRnrHjfC7L1yRcYGMpfI43Eu2jwzeq6ejsjbH0z_abezyt0qvadkf_TvpCxs0AGW9-WUiP5Jr8qImzApvqQm48SByOykHvTObIJrts1VgpBhNC4ifQhxDbonR-NMimt8McQoZ4qY_CUry_J_hyDbevgkuthq3vxmM2lw2481dL2w6MSF7HimBAU0baboR443MVzSvOpauKhTeRPwU9uPvqpYW_AiC7QpeBb2lt2QxqHgCbNq-IJHwbT8fJIOjm4CbwGgIME8ne95zJJ_NCD11_fza9QYShnPd3AM5q1Oq_iPTglat21KnWVLhhJlsT2iutigpRBDRR7M02KB6fjKBaYh3dsMQLixlBkuGLcCtSqFp8XD57Csn4-NXcH2QWjsyCbUnizc6csC6VWSvpDoag65sGWiMcgip02QfnFnMuf9KkGkvWWVtt1Rt8kkJgIuKwdklkxw7iWT4yjp3wcSO-5-XzdoSA54DbA-VU3lpTNRFOUut_WnZAKm5l5saLEdsbKhVVpdnMOqB1kmR_u-2eoR12JkwQzXg28Yl3DH2_c0Mizy5BT9nw&__tn__=C-R&paipv=0',
+  'username': 'Xuân Nhật'}]
+
+Please choose what you want to do:
+  1. Ranking top users have the most posts, reacts, comments, shares
+  2. Ranking top comments have the most reacts, replies
+  3. Ranking top posts have the most reacts, comments, shares
+  4. Crawl all comments of a post followed by regex
+    
